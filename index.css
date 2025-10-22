@@ -182,3 +182,34 @@ ul {
 #quickBtn {
   display: none;
 }
+
+/* 반응형 */
+@media (max-width: 1280px) {
+.f-hdn {
+    display: flex !important;
+}
+.fixed-side-1 li {
+    display: none;
+}
+.fixed-side-title {
+    font-size: 11px;
+}
+.fixed-side-text {
+    font-size: 1rem;
+}
+#quickBtn {
+    display: flex;
+}
+#quickBtn:hover {
+    background: none;
+}
+.fixed-side-container {
+    align-items: end;
+    bottom: 1rem;
+    right: -2rem;
+}
+.fixed-side-container li {
+    width: 80px;
+    height: 80px;
+};
+}

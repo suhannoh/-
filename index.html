@@ -91,7 +91,15 @@
   </div>
 
 
-  <script src=""></script>
+  <script>
+  const $quickBtn = document.querySelector("#quickBtn");
+  const q = document.querySelectorAll(".fixed-side-1 li");
+
+  $quickBtn.addEventListener("click", () => {
+    q.forEach(qq => {
+        qq.classList.toggle("f-hdn");
+    });})
+  </script>
 </body>
 
 </html>
