@@ -1,0 +1,34 @@
+.main-section-4-article-1{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-section-4-article-1 ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+#main-4-content--1 {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+}
+#main-4-content--2  {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  flex : 1; 
+  margin-right: 0px !important  ;
+
+}
+#main-4-content--2 img {
+  width: 100%;
+  height: 100%;
+}
