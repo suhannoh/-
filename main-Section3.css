@@ -67,29 +67,24 @@
 }
 
 /* 섹션1 */
-.main-section-1{
+#main {
     position:relative;
+    overflow: hidden;
 }
 
-.main-section-1>article{
+#main > article{
     width:100%;
     height:100vh;
     overflow: hidden;
 }
 #slide-list{
     display: flex;
-    border: 1px solid #000;
+    transition: transform 0.6s ease;
 }
 
 .slide-item{
     flex-shrink: 0;
-    border: 1px solid #000;
     width:100vw;
-    height:100vh;
-}
-
-.slide-item img{
-    width: 100%;
     height:100vh;
 }
 
@@ -97,230 +92,157 @@
     width:100%;
     height:100vh;
     background-image:url(https://img.79plus.co.kr/megahp/manager/upload/main/20250904012243_1756916563489_XAmYNqfY6G.jpg?ver=202207071306);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
 }
 
-#scroll-icon{
-    position:absolute;
-    bottom:2.8rem;
-    color:#fff;
-}
-/* 섹션3 */
+/* scroll-icon */
 
-.main-section-3 {
+#icon-box {
+    position:absolute;
+    bottom:4rem;
+    color:#fff;
+    cursor: pointer;
+    animation: icon_move 1.5s linear infinite;
+}
+
+.icon-mouse {
+    position:relative;
+    width:20px;
+    height:45px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding:10px;
+    margin: 0 auto;
+}
+
+.icon-wheel {
+    position:absolute;
+    left:7px;
+    width: 4px;
+    height: 8px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.icon-text {
+    color:#fff;
+    margin:5px 0;
+}
+
+@keyframes icon_move {
+    0% {
+        opacity: 0.3;
+        transform: translateY(-10%);
+    }
+    25% {
+        opacity: 0.7;
+        transform: translateY(0%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    75% {
+        opacity: 0.7;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translateY(-10%);
+    }
+}
+
+/* dots */
+.controls {
+    position:absolute;
+    display: flex;
+    gap:10px;
+    z-index: 5;
+}
+
+/* 섹션2 */
+
+#menu {
+    background: #fff;
+    position:relative;
+}
+
+#menu > article {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 945px;
-    background: var(--mega-yellow-color);
-    border: 1px solid white;
-    text-align: center;
+    position:absolute;
+    width:100%;
+    height:37rem;
+    padding:0 100px;
 }
 
-.main-section-3-article-1 {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.main-section-3-article-1 ul {
-    height: auto;
-    margin: 0 10%;
-    padding: 8%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 3rem;
-}
-
-#main-3-content--1 {
-    width: 100%;
-    height: 100%;
+.text-inner{
+    width:32rem;
+    height:37rem;
     text-align: left;
-    flex: 1;
-    min-width: 0;
 }
 
-#main-3-content--2 {
-    width: 100%;
-    height: 100%;
-    flex: 1;
+.text-inner > p:nth-of-type(1){
+    font-size:1.4rem;
+    font-weight: 400;
 }
 
-.main-section-3-article-1 h1 {
-    font-weight: 900;
-    font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1;
-    letter-spacing: -1px;
+.text-inner > p:nth-of-type(2){
+    font-size:1rem;
+    font-weight: 300;
+    margin: 20px 0;
 }
 
-#iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    background: #000
+.text-box{
+    margin: 0 0 40px;
 }
 
-.main-section-3-article-1 iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-}
-
-.main-section-3-article-1 button {
-    width: 100%;
-    background-color: var(--mega-footer-color);
-    color: white;
-    border: 0;
-    height: 3.2rem;
-    margin: 0;
-    font-weight: bold;
-    font-size: 1rem;
-    transform: translateY(0);
-}
-
-.main-3-content-wrap {
-    display: flex;
-    width: 15rem;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin: 0;
-}
-
-.main-3-content {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    font-weight: 900;
-}
-
-
-.main-3-content-bottom p:nth-child(1) {
-    font-size: 1.3em;
-    width: 22rem;
-    margin-bottom: 1rem;
-}
-
-.main-3-content-bottom p:nth-child(2) {
-    width: 100%;
-    font-size: 0.9rem;
+.text-box > p {
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
+.text-inner > p > span {
+    font-weight: bold;
+}
 
-#megaCoffeSpan {
+.text-box > h3 {
+    display: inline-block;
     position: relative;
-    width: auto;
-    height: auto;
+    font-size: 2.6rem;
+    height:50px;
     z-index: 1;
+    font-weight: 700;
+    margin:30px 0;
 }
 
-#megaCoffeSpan::before {
+.text-box > h3::after{
     content: "";
-    position: absolute;
-    bottom: -1%;
-    width: 105%;
-    left: -5%;
-    height: 2rem;
-    background-color: white;
-    z-index: -1;
+    display: block;
+    position:absolute;
+    top:75%;
+    left:-5%;
+    width:100%;
+    height:50%;
+    padding:0 20px;
+    background: var(--mega-yellow-color);
+    z-index:-1;
 }
 
-.font-w {
-    font-weight: 900;
-    line-height: 3.5rem;
-    font-size: 3rem;
-    margin: 0;
-    margin-bottom: 1rem;
-}
-
-.font-w-m {
-    font-weight: 900;
-    font-size: 2.3rem;
-
-}
-
-.hiddenContactBtn {
-    display: none;
-}
-
-.hiddenContactBtn button {
-    transform: translateY(0);
-}
-
-#youtubeContactBtn:hover {
-    transform: translateY(-5px);
-    transition: 0.5s;
+.btn {
+    width:9.2rem;
+    height:55px;
+    padding:0 20px;
+    background: var(--mega-yellow-color);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
-    background-color: #734715;
+    transition: all 0.2s ease;
 }
 
-.hiddenContactBtn button:hover {
-    transform: translateY(-5px);
-    transition: 0.5s;
-    cursor: pointer;
-    background-color: rgb(115, 71, 21);
-}
-
-.hidden {
-    display: none;
-}
-
-@media (max-width: 1280px) {
-    .main-3-content-wrap {
-        width: 100%;
-    }
-
-    .main-section-3-article-1 ul {
-        margin: 0;
-        padding: 3rem;
-    }
-
-    .main-section-3-article-1 h1 {
-        font-size: 3rem;
-    }
-
-    .pc {
-        display: none;
-    }
-
-    .main-3-content-bottom p:nth-child(1) {
-        width: 100%;
-        font-size: 1.2rem;
-    }
-
-    .main-3-content-bottom p:nth-child(2) {
-        width: 100%;
-        font-size: 0.8rem;
-    }
-
-}
-
-@media (max-width: 760px) {
-    .main-section-3-article-1 ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    #youtubeContactBtn {
-        display: none;
-    }
-
-    .hiddenContactBtn {
-        display: flex;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
+.btn:hover {
+    background: #ffdf43;
+    transform: translateY(-4px);
 }

@@ -1,12 +1,4 @@
-const contactBtn = {
-    phone : document.querySelector("#contactPhone"),
-    chat : document.querySelector("#contactEmail"),
-}
-
-contactBtn.phone.addEventListener("click", alertMsg);
-contactBtn.chat.addEventListener("click", alertMsg);
-
-function alertMsg() {
-    return alert("전화상담과 상담문의 alert 입니다.");
-}
-
+const slideList = document.querySelector("#slide-list");
+const slide = document.querySelector(".slide-item");
+const controls = document.querySelector(".controls");
+let indexList = 0;

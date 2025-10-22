@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="main-Section3.css">
   <style>
     * {
-      margin: 0 auto;
       box-sizing: border-box;
       --mega-font-color: #1c1c1B;
       --mega-yellow-color: #fdd000;
       --mega-footer-color: #212121;
       --mega-footer-font-color: #aaa;
       color: var(--mega-font-color);
+      font-family: 'noto-sans';
     }
 
     p {
@@ -50,7 +50,9 @@
       z-index: 2 !important;
     }
 
-    .main-section-1 {
+    /* 메인섹션1,2 */
+
+    .main-section {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -104,43 +106,15 @@
 <body>
   <div class="wrap">
     <div class="fixed-side-container">
-      <ul>
-        <li class="pointText"><a href="">
-            <p class="fixed-side-title">창업상담</p>
-            <p class="fixed-side-text sideLineHeight">1588-<br>0656</p>
-        </a></li>
-        <li><a href="" class="fixed-side-btns">
-            <p class="fixed-side-title">가맹점</p>
-            <p class="fixed-side-text">인수 상담</p>
-        </a></li>
-        <li><a href="" class="fixed-side-btns">
-            <p class="fixed-side-title">고객센터</p>
-            <p class="fixed-side-text">문의/접수</p>
-        </a></li>
-        <li><a href="" class="fixed-side-btns">
-            <p class="fixed-side-title">고객센터</p>
-            <p class="fixed-side-text sideLineHeight">1588-<br>8298</p>
-        </a></li>
-        <li><a href="" class="fixed-side-btns">
-          <p class="fixed-side-title">(25.10.16)누적</p>
-          <p class="fixed-side-text sideLineHeight">3,945호<br>오픈</p>
-        </a></li>
-        <li><a href="" class="fixed-side-btns sideBtn-1280">
-          <p class="fixed-side-title"> . . .</p>
-          <p class="fixed-side-text sideLineHeight">QUICK</p>
-        </a></li>
-      </ul>
+      <!--side-->
     </div>
     <header class="header-section">
       <!-- 궁헌님 -->
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium libero eligendi, omnis distinctio
-      cumque
-      vel facere voluptatibus atque, iusto voluptatem. Explicabo vitae iste tenetur eos. In quam cupiditate inventore?
       <h1>Header Fixed</h1>
     </header>
     <main>
-      <section class="main-section-1">
-        <!-- main section 1 다희님 -->
+      <!-- main section 1 나다희님 -->
+      <section id="main" class="main-section">
          <article>
           <ul id="slide-list">
             <li class="slide-item">
@@ -160,60 +134,55 @@
             </li>
           </ul>
          </article>
-         <div id="scroll-icon">스크롤을 내리세요!</div>
+         <!--스크롤 아이콘-->
+         <div id="icon-box">
+          <div class="icon-mouse">
+            <div class="icon-wheel"></div>
+          </div>
+          <div class="icon-text">스크롤을 내리세요!</div>
+         </div>
+         <!--dots-->
+         <div class="controls"><!--점 생성--></div>
       </section>
-      <section class="main-section-1">
-        <!-- main section 2 다희님 -->
-
+      <section id="menu" class="main-section">
+        <!-- main section 2 나다희님 -->
+         <article>
+          <!--왼쪽 컨텐츠-->
+          <div class="text-inner">
+            <div class="text-box">
+              <p>메가MGC커피 가을시즌 신메뉴</p>
+              <h3>리얼타임 청춘기록</h3>
+            </div>
+            <p>RIIZE into Fall</p>
+            <p>깊어지는 가을🍂<br>함께할수록 더 특별한 순간의 <span class="b">리얼타임 청춘기록</span>을<br>메가MGC커피에서 라이즈와 함께 만나보세요</p>
+            <button class="btn">메뉴 더보기</button>
+          </div>
+          <!--오른쪽 컨텐츠-->
+          <div class="text-inner">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+            </ul>
+          </div>
+         </article>
       </section>
+      <!--나다희 영역 끝-->
       <section class="main-section-3">
-        <article class="main-section-3-article-1">
-          <ul>
-            <li id="main-3-content--1">
-              <div class="main-3-content-wrap">
-                <p style="margin-bottom: 1rem; font-size: 1.3rem; font-weight: 300;">거품 없는 창업비용</p>
-                <h1 class="font-w">
-                  FRANCHISE
-                  <br>
-                  <span id="spanDiv"></span>
-                  <span id="megaCoffeSpan">
-
-                    MEGA MGC COFFEE
-                  </span>
-                </h1>
-                <h5 class="main-3-content"><span class="font-w-m">7,299</span>만원(10평 기준)</h5>
-              </div>
-              <div class=main-3-content-bottom>
-                <p>지금, 메가MGC커피에서<br class="pc"> 창업성공 스토리를 경험해보세요.</p>
-                <p>합리적인 창업비용과 다양한 경험을 바탕으로,<br class="pc"> 다양한 노하우를 전수하여 창업 성공을 약속드립니다.</p>
-              </div>
-            </li>
-            <li id="main-3-content--2">
-              <div id="iframe-container">
-                <iframe src="https://www.youtube.com/embed/Ppe5NIRco8A?autoplay=1&mute=1" title="메가MGC커피 창업 정보 안내"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share "
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <a href="https://mega-mgccoffee.com/customer/?db_category=2"><button id="youtubeContactBtn">창업문의
-                  바로가기</button></a>
-              <div class="hiddenContactBtn">
-                <button id="contactPhone">전화문의</button>
-                <button id="contactEmail">상담접수</button>
-              </div>
-            </li>
-          </ul>
+        main section 3
         </article>
-        <!-- 노수한 -->
+        <!-- 노수한님 -->
       </section>
       <section class="main-section-4">
         main section 4
-        <!-- 노수한 -->
+        <!-- 노수한님 -->
       </section>
       <section class="main-section-5">
         main section 5
 
-        <!-- 노수한 -->
+        <!-- 노수한님 -->
       </section>
     </main>
     <footer class="footer-section">
@@ -222,8 +191,7 @@
     </footer>
   </div>
 
-
-  <script src="mainSection3.js"></script>
+  <script src="./main-Section3.js"></script>
 </body>
 
 </html>
