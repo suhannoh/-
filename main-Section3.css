@@ -66,7 +66,47 @@
     gap: 2px;
 }
 
+/* 섹션1 */
+.main-section-1{
+    position:relative;
+}
 
+.main-section-1>article{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}
+#slide-list{
+    display: flex;
+    border: 1px solid #000;
+}
+
+.slide-item{
+    flex-shrink: 0;
+    border: 1px solid #000;
+    width:100vw;
+    height:100vh;
+}
+
+.slide-item img{
+    width: 100%;
+    height:100vh;
+}
+
+.slide-img{
+    width:100%;
+    height:100vh;
+    background-image:url(https://img.79plus.co.kr/megahp/manager/upload/main/20250904012243_1756916563489_XAmYNqfY6G.jpg?ver=202207071306);
+    background-position: center center;
+    background-size: cover;
+}
+
+#scroll-icon{
+    position:absolute;
+    bottom:2.8rem;
+    color:#fff;
+}
+/* 섹션3 */
 
 .main-section-3 {
     display: flex;
@@ -224,7 +264,7 @@
     transform: translateY(-5px);
     transition: 0.5s;
     cursor: pointer;
-    background-color: rgb(115, 71, 21);
+    background-color: #734715;
 }
 
 .hiddenContactBtn button:hover {
