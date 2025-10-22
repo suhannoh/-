@@ -1,0 +1,29 @@
+/* Test */
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    --mega-font-color: #1c1c1B;
+    --mega-yellow-color: rgb(253, 208, 0);
+    --mega-footer-color: rgb(33, 33, 33);
+    color: var(--mega-font-color);
+}
+.header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6.5rem;
+    background: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    z-index: 2 !important;
+    
+}
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 5000px;
+    text-align: center;
+}
