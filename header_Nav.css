@@ -1,4 +1,4 @@
-/* Test */
+Test
 * {
     margin: 0 auto;
     box-sizing: border-box;
@@ -7,6 +7,7 @@
     --mega-footer-color: rgb(33, 33, 33);
     color: var(--mega-font-color);
     /* background-color: lightgreen; */
+    list-style-type: none;
 }
 body{
     background-color: lightgreen;    
@@ -20,7 +21,7 @@ body{
     top: 0;
     width: 100%;
     height: 6.5rem;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     /* background-color: rgb(94, 82, 60); */
     text-align: center;
     z-index: 2 !important;
@@ -30,41 +31,74 @@ body{
 .header-section:hover{
     transition: 0.4s;
     background-color: white;
+    
 }
 .header_nav_bar_logo_img{
     height: 4rem;
     width: 12rem;
     
 }
-ul li{
-    list-style-type: none;
-}
+
 .wrap {
     position: relative;
     width: 100%;
     height: 5000px;
     text-align: center;
 }
-.nav_list{
+.header_nav_list{
     display: flex;
-    gap: 1rem;
-    
+    font-size: 1.5rem;
+    font-weight: bold;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+
+    gap: 5rem;    
 }
-#nav_bar {
+.header_nav_item{
+    position: relative;
+    list-style: none;
+    align-items: center;
+    text-align: center;    
+}
+.header_item_dropdown{
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%; /* 부모 메뉴 바로 아래 */
+    left: -100%;
+    /* background-color: white; */
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px); /* 위로 숨김 */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+.header-section:hover .header_item_dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* 아래로 내려오는 애니메이션 */
+}
+#header_nav_bar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  padding-left: 100px;
   width: 100%;
   position: relative;
 }
 
 #nav_bar a:first-child {
-  position: absolute;
+  position: static;
   left: 2rem; /* 왼쪽으로 붙이기 */
 }
-nav{
-    width:80%;
-    overflow:hidden;
-    height:6rem;
-    margin:4rem auto;
-    display: flex;}
+
+.header_nav_move_link:hover{
+    background-color: aqua;
+}

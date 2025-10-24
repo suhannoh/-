@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header-section {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+}
+
+#nav_bar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.5rem;
+}
+
+.header_nav_bar_logo_img {
+  height: 4rem;
+  width: auto;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav_item {
+  position: relative;
+}
+
+.nav_item > a {
+  text-decoration: none;
+  color: #1c1c1b;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+/* 드롭다운 메뉴 숨기기 */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw; /* 전체 화면 너비 */
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 5%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* hover 시 드롭다운 보이기 */
+.nav_item:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dropdown-group h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-group a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-group a:hover {
+  color: #fdd000;
+}
+
+/* 페이지 콘텐츠 */
+.content {
+  margin-top: 8rem;
+  padding: 2rem;
+}
