@@ -1,0 +1,64 @@
+/* Test */
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    --mega-font-color: #1c1c1B;
+    --mega-yellow-color: rgb(253, 208, 0);
+    --mega-footer-color: rgb(33, 33, 33);
+    color: var(--mega-font-color);
+    /* background-color: lightgreen; */
+}
+.header-section {
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6.5rem;
+    border: 1px solid #ccc;
+    /* background-color: rgb(94, 82, 60); */
+    text-align: center;
+    z-index: 2 !important;
+    color: RGB(35,24,21);
+    list-style-type: none;
+}
+.header-section:hover{
+    transition: 0.4s;
+    background-color: white;
+}
+.header_nav_bar_logo_img{
+    height: 4rem;
+    width: 12rem;
+    
+}
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 5000px;
+    text-align: center;
+}
+.nav_list{
+    display: flex;
+    gap: 1rem;
+    
+}
+#nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+#nav_bar a:first-child {
+  position: absolute;
+  left: 2rem; /* 왼쪽으로 붙이기 */
+}
+nav{
+    width:80%;
+    overflow:hidden;
+    height:6rem;
+    margin:4rem auto;
+    display: flex;}
