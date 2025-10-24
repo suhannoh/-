@@ -1,15 +1,5 @@
 /* Test */
-* {
-    margin: 0 auto;
-    box-sizing: border-box;
-    --mega-font-color: #1c1c1B;
-    --mega-yellow-color: rgb(253, 208, 0);
-    --mega-footer-color: rgb(33, 33, 33);
-    color: var(--mega-font-color);
-    /* background-color: lightgreen; */
-}
 .header-section {
-    /* margin: 0; */
     display: flex;
     justify-content: center;
     align-items: center;

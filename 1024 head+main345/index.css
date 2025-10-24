@@ -8,9 +8,10 @@
   --mega-side-btn-color: rgb(28, 28, 27);
 }
 * {
-  margin: 0 auto;
   box-sizing: border-box;
   color: var(--mega-font-color);
+  margin:0;
+  padding:0;
 }
 p {
   margin: 0;
@@ -40,13 +41,10 @@ ul {
 
 .main-section-1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 945px;
+  width: 100vw;
+  height: 100vh;
   background: #ccc;
   border: 1px solid white;
-  text-align: center;
   color: black;
 }
 
