@@ -7,15 +7,19 @@
   --mega-side-btn-hover-color: #703614;
   --mega-side-btn-color: rgb(28, 28, 27);
 }
-
 * {
-  margin:0;
-  padding:0;
   box-sizing: border-box;
   color: var(--mega-font-color);
+  margin:0;
+  padding:0;
 }
 p {
   margin: 0;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 ul {
   list-style: none;
@@ -33,61 +37,6 @@ ul {
 /* 자기 섹션은 마음대로 수정하세요  
    임의로 제가 설정 해두었습니다
 */
-
-/*  ㅡㅡㅡ 헤더 섹션 ㅡㅡㅡ */
-.header-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 6.5rem;
-  background: white;
-  border: 1px solid #ccc;
-  text-align: center;
-  z-index: 2 !important;
-}
-
-/* ㅡㅡㅡ 메인섹션 1 ㅡㅡㅡ */
-
-.main-section-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background: #ccc;
-  border: 1px solid white;
-  text-align: center;
-  color: black;
-}
-
-/* ㅡㅡㅡ 메인섹션 2 ㅡㅡㅡ */
-
-.main-section-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 945px;
-  background: white;
-  border: 1px solid white;
-  text-align: center;
-  color: black;
-}
-
-.main-section-5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 945px;
-  background: white;
-  border: 1px solid black;
-  text-align: center;
-  color: black;
-}
 
 /* ㅡㅡㅡ 푸터섹션 ㅡㅡㅡ */
 
@@ -158,17 +107,18 @@ ul {
   border-radius: 100%;
   width: 110px;
   height: 110px;
-  background-color: var(--mega-side-btn-color)
+  background-color: var(--mega-side-btn-color);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.fixed-side-container li:hover {
+.fixed-side-container li:not(#quickBtn):hover {
   background-color: var(--mega-yellow-color);
   cursor: pointer;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.fixed-side-container li:hover p {
-  color: var(--mege-font-color)
+.fixed-side-container li:not(#quickBtn):hover p {
+  color: var(--mega-font-color)
 }
 
 .fixed-side-container a {
@@ -183,12 +133,13 @@ ul {
 #quickBtn {
   display: none;
 }
-
-/* 반응형 */
-@media (max-width: 1280px) {
 .f-hdn {
     display: flex !important;
 }
+
+/* 반응형 */
+@media (max-width: 1280px) {
+
 .fixed-side-1 li {
     display: none;
 }
@@ -200,9 +151,11 @@ ul {
 }
 #quickBtn {
     display: flex;
+    background-color: var(--mega-side-btn-color);
 }
 #quickBtn:hover {
-    background: none;
+    background: var(--mega-side-btn-color);
+    cursor: pointer;
 }
 .fixed-side-container {
     align-items: end;
