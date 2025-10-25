@@ -49,6 +49,7 @@ infoText.forEach((item) => {
         </div>
         <p>${item.subtitle}</p>
         <p>${item.info}</p>
+        <button class="main2-btn">메뉴 더보기</button>
     `
 });
 
@@ -90,7 +91,7 @@ const cards = document.querySelectorAll(".card");
 let currentIndex = 0; //현재 인덱스를 0으로 정한다
 
 const activeSlide = () => {
-    slideWrap.style.transform = `translateX(-${currentIndex * 428}px)`; //카드의 폭 + 갭 10px를 더한 값 428
+    slideWrap.style.transform = `translateX(-${currentIndex * 427}px)`; //카드의 폭 + 갭 10px를 더한 값 428
     cards.forEach((c,i)=>{
         c.classList.toggle("active", i === currentIndex);
     });

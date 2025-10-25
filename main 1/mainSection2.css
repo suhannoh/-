@@ -69,7 +69,7 @@
 }
 
 /* 버튼 */
-.btn {
+.main2-btn {
     width:9.2rem;
     height:55px;
     padding:0 20px;
@@ -81,7 +81,7 @@
     transition: all 0.2s ease;
 }
 
-.btn:hover {
+.main2-btn:hover {
     background: #ffdf43;
     transform: translateY(-4px);
 }
