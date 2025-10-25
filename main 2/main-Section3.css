@@ -220,7 +220,7 @@
         display: none;
     }
 
-    .hiddenContactBtn {
+    .main3-hiddenContactBtn {
         display: flex;
         gap: 1rem;
         margin-top: 1rem;
@@ -262,4 +262,5 @@
     .main-3-content-bottom p:nth-child(2) {
     font-size: 1rem;
 }
+
 }
