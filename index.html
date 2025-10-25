@@ -71,24 +71,12 @@
       <!-- 나다희 -->
       <!-- main section 1 -->
       <section id="main" class="main-section-1">
-         <article>
-          <ul id="main-slide">
-            <li class="slide-item">
-              <div class="slide-img"></div>
-            </li>
-            <li class="slide-item">
-              <div class="slide-img"></div>
-            </li>
-            <li class="slide-item">
-              <div class="slide-img"></div>
-            </li>
-            <li class="slide-item">
-              <div class="slide-img"></div>
-            </li>
-            <li class="slide-item">
-              <div class="slide-img"></div>
-            </li>
-          </ul>
+         <article id="main1-wrap">
+          <div class="main1-slide-inner">
+            <ul id="main1-slide">
+              <!--슬라이드 li 생성 구역-->
+            </ul>
+          </div>
          </article>
          <!--스크롤 아이콘-->
          <div id="icon-box">
@@ -98,20 +86,19 @@
           <div class="icon-text">스크롤을 내리세요!</div>
          </div>
          <!--dots-->
-         <div class="controls"><!--점 생성--></div>
+         <div class="controls">
+          <!-- <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div> -->
+          <!--JS 점 생성 구역-->
+        </div>
       </section>
       <section id="menu" class="main-section-1">
         <!-- main section 2 -->
          <article class="main2-box">
           <!--왼쪽 컨텐츠-->
             <div class="info-inner">
-              <div class="info-box">
-                <p>메가MGC커피 가을시즌 신메뉴</p>
-                <h3>리얼타임 청춘기록</h3>
-              </div>
-              <p>RIIZE into Fall</p>
-              <p>깊어지는 가을🍂<br>함께할수록 더 특별한 순간의 <span class="b">리얼타임 청춘기록</span>을<br>메가MGC커피에서 라이즈와 함께 만나보세요</p>
-              <button class="btn">메뉴 더보기</button>
+              <!--JS INFO 생성 구역-->
             </div>
           </article>
           <!--오른쪽 컨텐츠-->
@@ -120,11 +107,12 @@
               <div id="slide-wrap">
                 <!--JS 슬라이드 생성 구역-->
               </div>
+              <div class="main2-btn-controls">
+                <button class="main2-slide-btn prev"></button>
+                <button class="main2-slide-btn next"></button>
             </div>
-            <div class="main2-btn-controls">
-              <button class="main2-slide-btn prev"></button>
-              <button class="main2-slide-btn next"></button>
             </div>
+            
           </article>
       </section>
       <!-- 나다희 영역 끝 -->
@@ -218,8 +206,10 @@
   <script src="./1024 head+main345/index.js"></script>
   <!-- main 2 button event -->
   <script src="./1024 head+main345/main-Section345.js"></script>
-  <!--main 2-->
-  <script src="./1024 head+main345/mainSection2.js"> </script>
+  
+  <!--main 1,2-->
+  <script src="./1024 head+main345/mainSection1.js"></script>
+  <script src="./1024 head+main345/mainSection2.js"></script>
 </body>
 
 </html>

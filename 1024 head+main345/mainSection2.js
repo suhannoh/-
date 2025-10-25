@@ -1,17 +1,18 @@
+//요소 선언
+const infoInner = document.querySelector(".info-inner");
+const slideWrap = document.getElementById("slide-wrap");
+
 //우측 텍스트박스 변수 선언
 const infoText = [
     {
         season: "메가MGC커피 가을시즌 신메뉴",
         maintitle: "리얼타임 청춘기록",
-        subtitle: "RIIZE into FAll"
+        subtitle: "RIIZE into FAll",
+        info: `깊어지는 가을🍂<br>함께할수록 더 특별한 순간의 <span class="b">리얼타임 청춘기록</span>을<br>메가MGC커피에서 라이즈와 함께 만나보세요`
     }
 ];
 
-
-
-//---
 //슬라이드 변수 선언
-//---
 const slides = [
     {
         img: "https://img.79plus.co.kr/megahp/manager/upload/menu/20250902150350_1756793030299_wEBKiCWct1.jpg",
@@ -39,25 +40,31 @@ const slides = [
     },
 ];
 
-const slideWrap = document.getElementById("slide-wrap");
-console.log(slideWrap);
+//INFO 생성
+infoText.forEach((item) => {
+    infoInner.innerHTML +=`
+        <div class="info-box">
+            <p>${item.season}</p>
+            <h3>${item.maintitle}</h3>
+        </div>
+        <p>${item.subtitle}</p>
+        <p>${item.info}</p>
+    `
+});
 
-//---
 //슬라이드 생성
-//---
-
-slides.forEach((item, index) => {
+slides.forEach((item, index) => { 
     const card = document.createElement("div"); //div 생성
     card.classList.add("card");
-    if(index === 0) {
-        card.classList.add("active"); 
+    if(index === 0) { //만약 index가 0이라면
+        card.classList.add("active"); //첫번째 index에 .active를 붙여라
     }
 
     const imgArea = document.createElement("div"); //img를 감싸는 div 생성
     imgArea.classList.add("slide-item-area");
 
     const img = document.createElement("img"); //img 생성
-    img.src = item.img;
+    img.src = item.img; //여기서 item은 slides를 가리킨다
     img.alt = item.title;
     imgArea.appendChild(img);
 
@@ -74,15 +81,12 @@ slides.forEach((item, index) => {
     card.appendChild(imgArea);
     card.appendChild(textBox);
     slideWrap.appendChild(card);
-
 });
 
-//---
 //슬라이드 이동
-//---
-
 const total = slides.length; //슬라이드 안의 배열 수를 total로 정한다
 const cards = document.querySelectorAll(".card");
+
 let currentIndex = 0; //현재 인덱스를 0으로 정한다
 
 const activeSlide = () => {
@@ -102,10 +106,9 @@ const prevSlide = () => {
     activeSlide();
 }
 
-//---
-//버튼 연결
-//---
+let autoSlide = setInterval(nextSlide, 5000); //nextSlide를 5초 간격으로 실행한다
 
+//버튼 연결
 document.querySelector(".prev").addEventListener("click", () => {
     prevSlide();
 })
@@ -113,5 +116,3 @@ document.querySelector(".prev").addEventListener("click", () => {
 document.querySelector(".next").addEventListener("click",() => {
     nextSlide();
 })
-
-let autoSlide = setInterval(nextSlide, 5000);

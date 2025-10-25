@@ -16,6 +16,7 @@
     overflow: hidden;
 }
 
+/* 왼쪽박스 중앙 가까이 정렬 */
 .main2-box:nth-of-type(1){
         justify-content: flex-end;
 }
@@ -27,6 +28,7 @@
     text-align: left;
 }
 
+/* subtitle */
 .info-inner > p:nth-of-type(1){
     font-size: 1.2rem;
     font-weight: 400;
@@ -38,8 +40,9 @@
     margin: 20px 0;
 }
 
+/* maintitle, season */
 .info-box{
-    margin: 0 0 40px;
+    margin: 0 0 30px;
 }
 
 .info-box > h3 {
@@ -49,7 +52,7 @@
     height:50px;
     z-index: 1;
     font-weight: 700;
-    margin:30px 0;
+    margin:20px 0;
 }
 
 .info-box > h3::after{
@@ -65,6 +68,7 @@
     z-index:-1;
 }
 
+/* 버튼 */
 .btn {
     width:9.2rem;
     height:55px;
@@ -118,8 +122,8 @@
 /* 버튼 */
 .main2-btn-controls {
     position: absolute;
-    top:16rem;
-    right:33rem;
+    top:4rem;
+    right:-9rem;
 }
 
 .main2-slide-btn {
