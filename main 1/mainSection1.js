@@ -1,27 +1,33 @@
 //슬라이드 변수 선언
 const mainSlides = [
     {
-        img: "https://img.79plus.co.kr/megahp/manager/upload/main/20250904012243_1756916563489_XAmYNqfY6G.jpg?ver=202207071306",
+        pc: "https://img.79plus.co.kr/megahp/manager/upload/main/20250904012243_1756916563489_XAmYNqfY6G.jpg?ver=202207071306",
+        mobile: "https://img.79plus.co.kr/megahp/manager/upload/main/20250904012243_1756916563716_KnxMTX3FZ4.jpg?ver=202207071306",
         title: "리얼타임 청춘기록"
     },
     {
-        img: "https://img.79plus.co.kr/megahp/manager/upload/main/20251023110728_1761185248895_41p1zdqV0x.jpg?ver=202207071306",
+        pc: "https://img.79plus.co.kr/megahp/manager/upload/main/20251023110728_1761185248895_41p1zdqV0x.jpg?ver=202207071306",
+        mobile: "https://img.79plus.co.kr/megahp/manager/upload/main/20251023110729_1761185249147_mndrQQdtR8.jpg?ver=202207071306",
         title: "응원으로 채워가는 내 안의 우주"
     },
     {
-        img: "https://img.79plus.co.kr/megahp/manager/upload/main/20250516164107_1747381267051_ImhzD_CLQI.jpg?ver=202207071306",
+        pc: "https://img.79plus.co.kr/megahp/manager/upload/main/20250516164107_1747381267051_ImhzD_CLQI.jpg?ver=202207071306",
+        mobile: "https://img.79plus.co.kr/megahp/manager/upload/main/20250516164107_1747381267275_2MwT2hAI9p.jpg?ver=202207071306",
         title: "메가커피 x 라이즈 콜라보 오디세이"
     },
     {
-        img: "https://img.79plus.co.kr/megahp/manager/upload/main/20250424000230_1745420550423_8nOaXZV6Ww.jpg?ver=202207071306",
+        pc: "https://img.79plus.co.kr/megahp/manager/upload/main/20250424000230_1745420550423_8nOaXZV6Ww.jpg?ver=202207071306",
+        mobile: "https://img.79plus.co.kr/megahp/manager/upload/main/20250424000230_1745420550887_Wj79OVa38k.jpg?ver=202207071306",
         title: "다같이 놀자~ 마루한바퀴"
     },
     {
-        img: "https://img.79plus.co.kr/megahp/manager/upload/main/20250319235554_1742396154719_ZFON8RAMW6.jpg?ver=202207071306",
+        pc: "https://img.79plus.co.kr/megahp/manager/upload/main/20250319235554_1742396154719_ZFON8RAMW6.jpg?ver=202207071306",
+        mobile: "https://img.79plus.co.kr/megahp/manager/upload/main/20250319235554_1742396154936_nDHDrfMrMv.jpg?ver=202207071306",
         title: "큰 거 옆에 또 큰 거! new 왕메가 출시"
     },
     {
-        img: "https://img.79plus.co.kr/megahp/manager/upload/main/20240926210426_1727352266910_QC_A3rqBQj.jpg?ver=202207071306",
+        pc: "https://img.79plus.co.kr/megahp/manager/upload/main/20240926210426_1727352266910_QC_A3rqBQj.jpg?ver=202207071306",
+        mobile: "https://img.79plus.co.kr/megahp/manager/upload/main/20240926210427_1727352267126_pw5jCrVvPI.jpg?ver=202207071306",
         title: "디카페인 출시! 편안하게 즐겨보세요"
     }
 ];
@@ -35,6 +41,12 @@ let mainCurrentIndex = 0; //처음 보여줄 인덱스 번호
 let currentTranslate = 0; //translate 값
 const slideCount = mainSlides.length; // 총 슬라이드 갯수
 let dots = []; // dots 저장 배열
+
+
+//뷰포트 타입에 따라 이미지 타입 변경하는 삼항연산자
+function getImgUrl(item) {
+    return window.innerWidth <= 760 ? item.mobile : item.pc;
+}
 
 //dot 생성
 function createDots() {
@@ -75,9 +87,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const slideItem = document.createElement("li");
     slideItem.classList.add("main1-slide-item");
 
-
     const img = document.createElement("img");
-    img.src = item.img;
+    img.src = getImgUrl(item);
     img.alt = item.title;
     slideItem.appendChild(img);
     slideBox.appendChild(slideItem);

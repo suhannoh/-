@@ -8,7 +8,7 @@ const infoText = [
         season: "메가MGC커피 가을시즌 신메뉴",
         maintitle: "리얼타임 청춘기록",
         subtitle: "RIIZE into FAll",
-        info: `깊어지는 가을🍂<br>함께할수록 더 특별한 순간의 <span class="b">리얼타임 청춘기록</span>을<br>메가MGC커피에서 라이즈와 함께 만나보세요`
+        info: `깊어지는 가을🍂<br>함께할수록 더 특별한 순간의 <span class="text-bold">리얼타임 청춘기록</span>을<br>메가MGC커피에서 라이즈와 함께 만나보세요`
     }
 ];
 
@@ -57,7 +57,7 @@ infoText.forEach((item) => {
 slides.forEach((item, index) => { 
     const card = document.createElement("div"); //div 생성
     card.classList.add("card");
-    if(index === 0) { //만약 index가 0이라면
+    if(window.innerWidth > 760 && index === 0) { //만약 index가 0이라면
         card.classList.add("active"); //첫번째 index에 .active를 붙여라
     }
 
@@ -91,7 +91,13 @@ const cards = document.querySelectorAll(".card");
 let currentIndex = 0; //현재 인덱스를 0으로 정한다
 
 const activeSlide = () => {
-    slideWrap.style.transform = `translateX(-${currentIndex * 427}px)`; //카드의 폭 + 갭 10px를 더한 값 428
+    const isMobile = window.innerWidth <= 760;
+    if(isMobile){
+        slideWrap.style.transform = `translateX(-${currentIndex * 200}px)`;
+        return;
+    }
+
+    slideWrap.style.transform = `translateX(-${currentIndex * 427}px)`;
     cards.forEach((c,i)=>{
         c.classList.toggle("active", i === currentIndex);
     });
@@ -108,6 +114,10 @@ const prevSlide = () => {
 }
 
 let autoSlide = setInterval(nextSlide, 5000); //nextSlide를 5초 간격으로 실행한다
+
+if(window.innerWidth <= 760) {
+    clearInterval(autoSlide);
+}
 
 //버튼 연결
 document.querySelector(".prev").addEventListener("click", () => {
