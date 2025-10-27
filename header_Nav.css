@@ -1,105 +1,155 @@
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    --mega-font-color: #1c1c1B;
-    --mega-yellow-color: rgb(253, 208, 0);
-    --mega-footer-color: rgb(33, 33, 33);
-    color: var(--mega-font-color);
-    list-style-type: none;
 }
-body{
-    background-color: lightgreen;    
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background: #c0a27a;
+    height: 200vh;
 }
+
 .header-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 6.5rem;
-    text-align: center;
-    z-index: 2 !important;
-    color: RGB(35,24,21);
-    list-style-type: none;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 999;
 }
-.header-section:hover{
-    transition: 0.4s;
-    background-color: white;
-    
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: flex-start;
+    /* 서브메뉴 내려올 공간 확보 */
+    justify-content: space-between;
+    height: 80px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    padding: 10px 0;
 }
-.header_nav_bar_logo_img{
-    height: 4rem;
-    width: 12rem;
+
+.header-inner:hover {
+    height: 300px;
+    /* hover 시 inner가 커짐 */
 }
-.wrap {
-    position: relative;
+
+.header-logo img {
+    height: 50px;
+}
+
+nav.header-nav {
+    display: flex;
+    align-items: flex-start;
+    /* 메뉴가 내려올 수 있게 */
+}
+
+.header-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
     width: 100%;
-    height: 5000px;
-    text-align: center;
 }
-.header_nav_menu{
-    display: flex;
-    font-size: 1.5rem;
-    font-weight: bold;
-    list-style: none;
-    align-items: center;
-    text-align: center;
 
-    gap: 5rem;    
-}
-.header_nav_item{
+.header-nav-item {
     position: relative;
-    list-style: none;
-    align-items: center;
-    text-align: center;    
+    width: 5rem;
+    text-align: center;
 }
-.header_item_dropdown{
-    list-style: none;
-    position: absolute;
-    top: 100%; 
-    left: -100%;
-    background-color: white;
 
-    display: flex;
-    flex-direction: column;
+.header-nav-item>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.2s ease;
+    /* width: 10em; */
+}
+
+.header-nav-item>a:hover {
+    background-color: #ffcc00;
+}
+
+/* 서브 메뉴 기본 숨김 */
+.header-submenu {
+    list-style: none;
     opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px); 
+    max-height: 0;
+    overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 10px;
 }
-.header_item_dropdown li:hover{
-    border-bottom: 5px solid rgb(180, 0, 0);
-}
-.header_item_dropdown:hover{
-    background-color: gray;
-}
-.header_nav_item:hover{
-    background-color: yellow;
-}
-.header-section:hover .header_item_dropdown{
+
+/* hover 시 서브 메뉴 표시 */
+.header-inner:hover .header-submenu {
     opacity: 1;
-    visibility: visible;
-    transform: translateY(0); 
-}
-#header_nav_bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 100px;
-  width: 100%;
-  position: relative;
+    max-height: 200px;
 }
 
-#nav_bar a:first-child {
-  position: static;
-  left: 2rem;
+.header-submenu-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+    padding: 5px 0;
 }
 
-.header_nav_move_link:hover{
-    background-color: aqua;
+.header-submenu-item a:hover {
+    background-color: #ffcc00;
 }
-#header_nav_bar:hover .header_item_dropdown{ 
-      opacity: 1;
-} 
+
+.header-nav-item:hover {
+    background-color: #ffcc00;
+    height: 20rem;
+}
+
+.header-submenu-item:hover {
+    text-decoration: underline;
+    justify-content: center;
+}
+
+
+.header-nav-move-bar-link {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-nav-move-bar-link-click {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: all 0.25s ease;
+}
+
+/* 링크 전체에 flex 적용 (이미지 정렬 안정화) */
+.header-nav-move-bar-link-click a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header-nav-move-bar-link-click img {
+    display: block;
+    object-fit: contain;
+}
+
+/* hover 시 효과 */
+.header-nav-move-bar-link-click:hover {
+    background-color: #ffcc00;
+    border-style: none;
+}
