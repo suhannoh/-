@@ -45,7 +45,7 @@
 
 #icon-box {
     position:absolute;
-    bottom:3.8rem;
+    bottom:3rem;
     color:#fff;
     cursor: pointer;
     animation: icon_move 1.5s linear infinite;
@@ -96,8 +96,8 @@
 
 @keyframes wheel_move {
     0% {transform: translateY(0)}
-    50% {transform: translateY(200%)}
-    0% {transform: translateY(0);}
+    50% {transform: translateY(200%); opacity: 0.5;}
+    100% {opacity: 0;}
 }
 
 .icon-text {
@@ -108,7 +108,7 @@
 /* dots control box */
 .controls {
     position:absolute;
-    bottom:2rem;
+    bottom:1rem;
     display: flex;
     gap:8px;
     z-index: 5;
@@ -126,4 +126,17 @@
 .active {
     width: 48px;
     opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .main1-slide-item.type-wide img {
+    object-fit: contain;
+    height: auto;
+    background: #000;
+  }
+
+  .main1-slide-item.type-tall img {
+    object-fit: cover;
+    height: 100dvh;
+  }
 }
