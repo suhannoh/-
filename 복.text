@@ -1,27 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<link rel="stylesheet" href="./header_Nav.css">
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    --mega-font-color: #1c1c1B;
+    --mega-yellow-color: rgb(253, 208, 0);
+    --mega-footer-color: rgb(33, 33, 33);
+    color: var(--mega-font-color);
+    /* background-color: lightgreen; */
+    list-style-type: none;
+}
+body{
+    background-color: lightgreen;    
+}
+.header-section {
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6.5rem;
+    /* border: 1px solid #ccc; */
+    /* background-color: rgb(94, 82, 60); */
+    text-align: center;
+    z-index: 2 !important;
+    color: RGB(35,24,21);
+    list-style-type: none;
+}
+.header-section:hover{
+    transition: 0.4s;
+    background-color: white;
+    
+}
+.header_nav_bar_logo_img{
+    height: 4rem;
+    width: 12rem;
+    
+}
 
-<body>
-    <div class="wrap">
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 5000px;
+    text-align: center;
+}
+.header_nav_menu{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+
+    gap: 5rem;    
+}
+.header_nav_item{
+    position: relative;
+    list-style: none;
+    align-items: center;
+    text-align: center;    
+}
+.header_item_dropdown{
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%; /* 부모 메뉴 바로 아래 */
+    left: -100%;
+    /* background-color: white; */
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px); /* 위로 숨김 */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+.header-section:hover .header_item_dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* 아래로 내려오는 애니메이션 */
+}
+#header_nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 100px;
+  width: 100%;
+  position: relative;
+}
+
+#nav_bar a:first-child {
+  position: static;
+  left: 2rem; /* 왼쪽으로 붙이기 */
+}
+
+.header_nav_move_link:hover{
+    background-color: aqua;
+}
 
 
-
-
-        <header class="header-section">
-
-    <nav id="header_nav_bar">
-        <a href="a">
-            <img class="header_nav_bar_logo_img" src="https://img.79plus.co.kr/megahp/common/img/new_logo_b.png " alt=""></a>
-
-
-<nav class="header_navbar">
+ㅡㅡㅡㅡㅡㅡ
+    <nav class="header_navbar">
         <ul class="header_nav_menu">
             <li class="header_nav_item" ><a href="#">menu1</a>
                 <ul class="header_item_dropdown">
@@ -67,10 +151,3 @@
         <a class="header_nav_move_link" href="a"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_blog.png" alt=""></a>
     </div>
     </nav>    
-        </header>
-
-    </div>
-    <script src="./header_Nav.js"></script>
-</body>
-
-</html>

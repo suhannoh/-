@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>상단 고정 박스 hover + 드롭다운 메뉴</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Pretendard", sans-serif;
+    background: #f9f9f9;
+    height: 200vh;
+  }
+
+  /* 상단 고정 박스 */
+  .top-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #FFD600;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease, background-color 0.3s ease;
+    z-index: 999;
+  }
+
+  /* hover 시 박스 커짐 */
+  .top-box:hover {
+    height: 130px;
+    background-color: #ffcc00;
+  }
+
+  /* 메뉴 기본 */
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menu > li {
+    position: relative;
+  }
+
+  .menu > li > a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .menu > li > a:hover {
+    transform: scale(1.1);
+  }
+
+  /* 하위 메뉴 (기본 감춤) */
+  .menu > li > ul {
+    position: absolute;
+    top: 100%; /* 부모 li 아래쪽에 표시 */
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    background: #fff;
+    padding: 10px 0;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    border-radius: 4px;
+  }
+
+  /* hover 시 보이게 */
+  .menu > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 10px);
+  }
+
+  /* 하위 메뉴 li 스타일 */
+  .menu > li > ul > li {
+    padding: 8px 20px;
+    white-space: nowrap;
+  }
+
+  .menu > li > ul > li:hover {
+    background: #f5f5f5;
+  }
+
+  .menu > li > ul > li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="top-box">
+    <ul class="menu">
+      <li>
+        <a href="/">브랜드</a>
+        <ul>
+          <li><a href="#">브랜드 소개</a></li>
+          <li><a href="#">BI 안내</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/">메뉴소개</a>
+        <ul>
+          <li><a href="#">커피</a></li>
+          <li><a href="#">음료</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/">매장찾기</a>
+        <ul>
+          <li><a href="#">가맹점 검색</a></li>
+          <li><a href="#">신규 오픈</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/">창업안내</a>
+        <ul>
+          <li><a href="#">가맹 절차</a></li>
+          <li><a href="#">비용 안내</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/">이벤트</a>
+        <ul>
+          <li><a href="#">진행 중 이벤트</a></li>
+          <li><a href="#">종료된 이벤트</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

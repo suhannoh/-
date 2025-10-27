@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f7f7;
+  min-height: 200vh;
+}
+
+/* 상단 헤더 */
+.header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #f3f1e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  z-index: 100;
+}
+
+#header_nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.header_nav_bar_logo_img {
+  width: 120px;
+  height: auto;
+}
+
+/* 상단 메뉴 */
+.header_nav_menu {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  position: relative;
+}
+
+.header_nav_item {
+  position: relative;
+}
+
+.header_nav_item > a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.header_nav_item:hover > a {
+  color: #c40000;
+}
+
+/* ✅ 전체 폭 드롭다운 wrapper */
+.header_dropdown_wrapper {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.25s ease;
+  z-index: 90;
+}
+
+/* 메뉴 hover 시 표시 */
+.header_nav_item:hover .header_dropdown_wrapper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ✅ 드롭다운 내부 아이템 */
+.header_item_dropdown {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem 0;
+  width: 1200px;
+}
+
+.header_item_dropdown li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header_item_dropdown li a:hover {
+  color: #c40000;
+}
+
+/* SNS 영역 */
+.header_nav_move_bar_link img {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+}
+<header class="header-section">
+  <nav id="header_nav_bar">
+    <!-- 왼쪽 로고 -->
+    <a href="#">
+      <img class="header_nav_bar_logo_img"
+        src="https://img.79plus.co.kr/megahp/common/img/new_logo_b.png"
+        alt="logo">
+    </a>
+
+    <!-- 상단 메뉴 -->
+    <ul class="header_nav_menu">
+      <li class="header_nav_item">
+        <a href="#">menu1</a>
+        <div class="header_dropdown_wrapper">
+          <ul class="header_item_dropdown">
+            <li><a href="#">menu1 - item1</a></li>
+            <li><a href="#">menu1 - item2</a></li>
+            <li><a href="#">menu1 - item3</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="header_nav_item">
+        <a href="#">menu2</a>
+        <div class="header_dropdown_wrapper">
+          <ul class="header_item_dropdown">
+            <li><a href="#">menu2 - item1</a></li>
+            <li><a href="#">menu2 - item2</a></li>
+            <li><a href="#">menu2 - item3</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="header_nav_item">
+        <a href="#">menu3</a>
+        <div class="header_dropdown_wrapper">
+          <ul class="header_item_dropdown">
+            <li><a href="#">menu3 - item1</a></li>
+            <li><a href="#">menu3 - item2</a></li>
+            <li><a href="#">menu3 - item3</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="header_nav_item">
+        <a href="#">menu4</a>
+        <div class="header_dropdown_wrapper">
+          <ul class="header_item_dropdown">
+            <li><a href="#">menu4 - item1</a></li>
+            <li><a href="#">menu4 - item2</a></li>
+            <li><a href="#">menu4 - item3</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="header_nav_item">
+        <a href="#">menu5</a>
+        <div class="header_dropdown_wrapper">
+          <ul class="header_item_dropdown">
+            <li><a href="#">menu5 - item1</a></li>
+            <li><a href="#">menu5 - item2</a></li>
+            <li><a href="#">menu5 - item3</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <!-- 오른쪽 SNS 아이콘 -->
+    <div class="header_nav_move_bar_link">
+      <a href="#"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_smartstore.png" alt=""></a>
+      <a href="#"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_instagram.png" alt=""></a>
+      <a href="#"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_facebook.png" alt=""></a>
+      <a href="#"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_blog.png" alt=""></a>
+    </div>
+  </nav>
+</header>

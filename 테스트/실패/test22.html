@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메가커피 헤더 - div 감싸기</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #c0a27a;
+      height: 200vh;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      z-index: 999;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: visible;
+      transition: height 0.3s ease;
+    }
+
+    .header-logo img {
+      height: 50px;
+    }
+
+    nav.header-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    /* 메뉴를 div로 감싸기 */
+    .header-nav-item-wrapper {
+      position: relative;
+    }
+
+    .header-nav-item {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .header-nav-item:hover {
+      background-color: #ffcc00;
+    }
+
+    /* 서브 메뉴 */
+    .header-submenu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: max-content;
+      background-color: #fff;
+      overflow: hidden;
+
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    /* header-inner hover 시 서브 메뉴 슬라이드 */
+    .header-inner:hover .header-submenu {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    .header-submenu-item a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .header-submenu-item a:hover {
+      background-color: #ffcc00;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="https://img.79plus.co.kr/megahp/common/img/new_logo_b.png" alt="Mega Coffee Logo">
+      </div>
+      <nav class="header-nav">
+        <!-- 메가 스토리 -->
+        <div class="header-nav-item-wrapper">
+          <div class="header-nav-item">메가 스토리</div>
+          <ul class="header-submenu">
+            <li class="header-submenu-item"><a href="#">브랜드</a></li>
+            <li class="header-submenu-item"><a href="#">BI</a></li>
+            <li class="header-submenu-item"><a href="#">오시는 길</a></li>
+          </ul>
+        </div>
+        <!-- 메뉴소개 -->
+        <div class="header-nav-item-wrapper">
+          <div class="header-nav-item">메뉴소개</div>
+          <ul class="header-submenu">
+            <li class="header-submenu-item"><a href="#">음료</a></li>
+            <li class="header-submenu-item"><a href="#">푸드</a></li>
+            <li class="header-submenu-item"><a href="#">상품</a></li>
+          </ul>
+        </div>
+        <!-- 매장 -->
+        <div class="header-nav-item-wrapper">
+          <div class="header-nav-item">매장</div>
+          <ul class="header-submenu">
+            <li class="header-submenu-item"><a href="#">매장찾기</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div style="margin-top:200px; text-align:center;">
+    <h2>스크롤 테스트 영역</h2>
+  </div>
+</body>
+
+</html>

@@ -1,163 +1,157 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>메가 메뉴 예시</title>
-<style>
-  body {
-    margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메가커피 스타일 헤더</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  header {
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-    z-index: 1000;
-  }
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #c0a27a;
+      height: 200vh;
+    }
 
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      z-index: 999;
+    }
 
-  /* 상단 메뉴 리스트 */
-  .nav_list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start; /* 서브메뉴 내려올 공간 확보 */
+      justify-content: space-between;
+      height: 80px;
+      overflow: hidden;
+      transition: height 0.3s ease;
+      padding: 10px 0;
+    }
 
-  .nav_item {
-    position: relative; /* 드롭다운 위치 기준 */
-  }
+    .header-inner:hover {
+      height: 300px; /* hover 시 inner가 커짐 */
+    }
 
-  .nav_item > a {
-    display: block;
-    padding: 1rem 1.5rem;
-    color: #333;
-    text-decoration: none;
-    font-weight: 600;
-  }
+    .header-logo img {
+      height: 50px;
+    }
 
-  .nav_item:hover > a,
-  .nav_item:focus-within > a {
-    background-color: #ffdc00; /* 강조색 */
-    color: #000;
-  }
+    nav.header-nav {
+      display: flex;
+      align-items: flex-start; /* 메뉴가 내려올 수 있게 */
+    }
 
-  /* 드롭다운 메뉴 */
-  .dropdown_content {
-    position: absolute;
-    left: 0;
-    top: 100%; /* 메뉴 바로 아래 */
-    width: 100vw; /* 전체 화면 너비 */
-    background: white;
-    display: flex;
-    justify-content: center; /* 가운데 정렬 */
-    padding: 2rem 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.3s ease;
-  }
+    .header-nav-list {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
 
-  /* 드롭다운 활성화 */
-  .nav_item:hover .dropdown_content,
-  .nav_item:focus-within .dropdown_content {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-  }
+    .header-nav-item {
+      position: relative;
+    }
 
-  /* 드롭다운 내부 콘텐츠 래퍼 */
-  .dropdown_inner {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    gap: 4rem;
-  }
+    .header-nav-item > a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 10px 0;
+      display: block;
+      transition: color 0.2s ease;
+    }
 
-  /* 서브메뉴 컬럼 */
-  .dropdown_col {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+    .header-nav-item > a:hover {
+      background-color: #ffcc00;
+    }
 
-  .dropdown_col h4 {
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
+    /* 서브 메뉴 기본 숨김 */
+    .header-submenu {
+      list-style: none;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
 
-  .dropdown_col a {
-    text-decoration: none;
-    color: #555;
-    font-weight: 500;
-  }
+    /* hover 시 서브 메뉴 표시 */
+    .header-inner:hover .header-submenu {
+      opacity: 1;
+      max-height: 200px;
+    }
 
-  .dropdown_col a:hover {
-    color: #ffdc00;
-  }
+    .header-submenu-item a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      display: block;
+      padding: 5px 0;
+    }
 
-  /* 전체 콘텐츠 아래 여백 */
-  main {
-    padding-top: 70px; /* 헤더 높이만큼 */
-  }
-</style>
+    .header-submenu-item a:hover {
+      background-color: #ffcc00;
+    }
+
+    .header-nav-move-bar-link a {
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="https://img.79plus.co.kr/megahp/common/img/new_logo_b.png" alt="Mega Coffee Logo">
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a href="#">메가 스토리</a>
+            <ul class="header-submenu">
+              <li class="header-submenu-item"><a href="#">브랜드</a></li>
+              <li class="header-submenu-item"><a href="#">BI</a></li>
+              <li class="header-submenu-item"><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">메뉴소개</a>
+            <ul class="header-submenu">
+              <li class="header-submenu-item"><a href="#">음료</a></li>
+              <li class="header-submenu-item"><a href="#">푸드</a></li>
+              <li class="header-submenu-item"><a href="#">상품</a></li>
+            </ul>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">매장</a>
+            <ul class="header-submenu">
+              <li class="header-submenu-item"><a href="#">매장찾기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-nav-move-bar-link">
+        <a href="#"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_smartstore.png" alt=""></a>
+        <a href="#"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_instagram.png" alt=""></a>
+        <a href="#"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_facebook.png" alt=""></a>
+        <a href="#"><img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_blog.png" alt=""></a>
+      </div>
+    </div>
+  </header>
 
-<header>
-  <nav>
-    <ul class="nav_list">
-      <li class="nav_item">
-        <a href="#">메가 스토리</a>
-        <div class="dropdown_content">
-          <div class="dropdown_inner">
-            <div class="dropdown_col">
-              <h4>브랜드</h4>
-              <a href="#">브랜드 소개</a>
-              <a href="#">역사</a>
-            </div>
-            <div class="dropdown_col">
-              <h4>오시는 길</h4>
-              <a href="#">매장 찾기</a>
-              <a href="#">고객센터</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="nav_item">
-        <a href="#">메뉴 소개</a>
-        <div class="dropdown_content">
-          <div class="dropdown_inner">
-            <div class="dropdown_col">
-              <h4>음료</h4>
-              <a href="#">아메리카노</a>
-              <a href="#">라떼</a>
-            </div>
-            <div class="dropdown_col">
-              <h4>푸드</h4>
-              <a href="#">샌드위치</a>
-              <a href="#">케이크</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <!-- 필요에 따라 추가 메뉴 넣기 -->
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <p>페이지 본문 내용이 여기에 들어갑니다.</p>
-</main>
-
+  <div style="margin-top:200px; text-align:center;">
+    <h2>스크롤 테스트 영역</h2>
+  </div>
 </body>
 </html>

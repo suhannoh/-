@@ -1,14 +1,23 @@
+*{
+  /* height: 5000px; */
+}
 body{
     background-color: bisque;
 }
+
+
 .navbar {
+  position: fixed;
   background-color: #ffffff;
   padding: 0.5rem 1rem;
   transition: height 0.3s ease;
   overflow: hidden; /* 서브 메뉴가 내려올 때 깔끔하게 */
   height: 60px; /* 기본 navbar 높이 */
+  width: 100%;
 }
-
+.dropdown-menu li:hover{
+  border: 1px solid red;
+}
 .nav-menu {
   list-style: none;
   display: flex;

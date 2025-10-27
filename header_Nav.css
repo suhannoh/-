@@ -1,4 +1,3 @@
-Test
 * {
     margin: 0 auto;
     box-sizing: border-box;
@@ -6,14 +5,12 @@ Test
     --mega-yellow-color: rgb(253, 208, 0);
     --mega-footer-color: rgb(33, 33, 33);
     color: var(--mega-font-color);
-    /* background-color: lightgreen; */
     list-style-type: none;
 }
 body{
     background-color: lightgreen;    
 }
 .header-section {
-    /* margin: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +18,6 @@ body{
     top: 0;
     width: 100%;
     height: 6.5rem;
-    /* border: 1px solid #ccc; */
-    /* background-color: rgb(94, 82, 60); */
     text-align: center;
     z-index: 2 !important;
     color: RGB(35,24,21);
@@ -36,16 +31,14 @@ body{
 .header_nav_bar_logo_img{
     height: 4rem;
     width: 12rem;
-    
 }
-
 .wrap {
     position: relative;
     width: 100%;
     height: 5000px;
     text-align: center;
 }
-.header_nav_list{
+.header_nav_menu{
     display: flex;
     font-size: 1.5rem;
     font-weight: bold;
@@ -63,27 +56,32 @@ body{
 }
 .header_item_dropdown{
     list-style: none;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    top: 100%; /* 부모 메뉴 바로 아래 */
+    top: 100%; 
     left: -100%;
-    /* background-color: white; */
-    min-width: 200px;
+    background-color: white;
+
     display: flex;
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-20px); /* 위로 숨김 */
+    transform: translateY(-20px); 
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    z-index: 999;
+}
+.header_item_dropdown li:hover{
+    border-bottom: 5px solid rgb(180, 0, 0);
+}
+.header_item_dropdown:hover{
+    background-color: gray;
+}
+.header_nav_item:hover{
+    background-color: yellow;
 }
 .header-section:hover .header_item_dropdown{
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); /* 아래로 내려오는 애니메이션 */
+    transform: translateY(0); 
 }
 #header_nav_bar {
   display: flex;
@@ -96,9 +94,12 @@ body{
 
 #nav_bar a:first-child {
   position: static;
-  left: 2rem; /* 왼쪽으로 붙이기 */
+  left: 2rem;
 }
 
 .header_nav_move_link:hover{
     background-color: aqua;
 }
+#header_nav_bar:hover .header_item_dropdown{ 
+      opacity: 1;
+} 
