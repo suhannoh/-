@@ -1,0 +1,152 @@
+/* 기본설정 */
+.footer-section{
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.footer-section a{
+  text-decoration: none;
+}
+.footer-section ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* 상단(노란띠) */
+.footer-policy {
+  background: var(--mega-yellow-color);        
+  padding: 20px 0; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+}
+.footer-policy-list {
+  max-width: 1280px; 
+  margin: 0 auto;    
+  padding: 0 16px; 
+}
+.footer-policy-list ul{
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 24px;       
+  align-items: center;  
+  font-weight: 600;
+  font-size: 1rem;
+}
+.footer-policy-list li a:hover {
+  text-decoration: underline; 
+  text-underline-offset: 2px; 
+}
+
+/* 하단-공통*/
+.footer-content {
+  background: var(--mega-footer-color); 
+  color: var(--mega-footer-font-color); 
+  padding: 60px 0; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) inset; 
+}
+.footer-inner {
+  max-width: 1280px; 
+  margin: 0 auto;    
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between; 
+  gap: 30px 48px;
+}
+/* 하단-왼쪽 */
+.footer-left {
+  min-width: 300px;
+}
+.footer-brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px 16px;
+  margin-bottom: 20px;
+}
+.footer-logo img {
+  display: block;
+  max-width: 180px;
+  height: auto;
+}
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.footer-social li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  background: #fff;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+.footer-social li a:hover {
+  background: var(--mega-yellow-color);
+}
+.footer-social li img {
+  display: block;
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+}
+.footer-company {
+  font-size: 1em;
+  line-height: 1.7;
+}
+.footer-company li{
+  color: var(--mega-footer-font-color);
+}
+.company-info-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1em;
+  margin: 0 0 8px;
+}
+.company-info-line:last-child {
+  margin-bottom: 0;
+}
+.footer-company strong {
+  font-weight: 600;
+  color: #fff;
+}
+/* 하단-오른쪽 */
+.footer-right {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.footer-menu-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px 20px;
+}
+.footer-menu-col {
+  min-width: 100px;
+}
+.footer-menu-col h3 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0 0 16px;
+  white-space: nowrap;
+}
+.footer-menu-col ul li {
+  margin-bottom: 10px;
+}
+.footer-menu-col ul li:last-child {
+  margin-bottom: 0;
+}
+.footer-menu-col ul li a {
+  color: var(--mega-footer-font-color);
+  font-size: 1em;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+.footer-menu-col ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
