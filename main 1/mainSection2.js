@@ -1,8 +1,10 @@
 //요소 선언
 const infoInner = document.querySelector(".info-inner");
 const slideWrap = document.getElementById("slide-wrap");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 
-//우측 텍스트박스 변수 선언
+//데이터 선언
 const infoText = [
     {
         season: "메가MGC커피 가을시즌 신메뉴",
@@ -12,7 +14,6 @@ const infoText = [
     }
 ];
 
-//슬라이드 변수 선언
 const slides = [
     {
         img: "https://img.79plus.co.kr/megahp/manager/upload/menu/20250902150350_1756793030299_wEBKiCWct1.jpg",
@@ -41,8 +42,8 @@ const slides = [
 ];
 
 //INFO 생성
-infoText.forEach((item) => {
-    infoInner.innerHTML +=`
+function renderInfo(){
+    infoInner.innerHTML = infoText.map(item => `
         <div class="info-box">
             <p>${item.season}</p>
             <h3>${item.maintitle}</h3>
@@ -50,80 +51,97 @@ infoText.forEach((item) => {
         <p>${item.subtitle}</p>
         <p>${item.info}</p>
         <button class="main2-btn">메뉴 더보기</button>
-    `
-});
+        `
+    ).join("");
+}
 
 //슬라이드 생성
-slides.forEach((item, index) => { 
-    const card = document.createElement("div"); //div 생성
-    card.classList.add("card");
-    if(window.innerWidth > 760 && index === 0) { //만약 index가 0이라면
-        card.classList.add("active"); //첫번째 index에 .active를 붙여라
-    }
+function renderSlide(){
+    const fragment = document.createDocumentFragment();
+    const isDesktop = window.innerWidth > 760;
 
-    const imgArea = document.createElement("div"); //img를 감싸는 div 생성
-    imgArea.classList.add("slide-item-area");
-
-    const img = document.createElement("img"); //img 생성
-    img.src = item.img; //여기서 item은 slides를 가리킨다
-    img.alt = item.title;
-    imgArea.appendChild(img);
-
-    const textBox = document.createElement("div"); //textbox 생성
-    textBox.classList.add("text-box");
-    textBox.innerHTML = `
-        <div>
-            <h4 class="con-text">${item.title}</h4>
-            <p class="text1">${item.subtitle}</p>
+    slides.forEach((item, index) => { 
+    const card = document.createElement("div");
+    card.className = "card" + (isDesktop && index === 0 ? " active":"");
+    card.innerHTML = `
+        <div class="slide-item-area">
+            <img src="${item.img}" alt="${item.title}">
         </div>
-        <div class="text1">${item.info}</div>
+        <div class="text-box">
+            <div>
+                <h4 class="con-text">${item.title}</h4>
+                <p class="text1">${item.subtitle}</p>
+            </div>
+            <div class="text1">${item.info}</div>
+        </div>
     `;
-
-    card.appendChild(imgArea);
-    card.appendChild(textBox);
-    slideWrap.appendChild(card);
+    fragment.appendChild(card);
 });
+    slideWrap.innerHTML = "";
+    slideWrap.appendChild(fragment);
+} //documentfragment를 사용한 최적화
 
 //슬라이드 이동
-const total = slides.length; //슬라이드 안의 배열 수를 total로 정한다
-const cards = document.querySelectorAll(".card");
-
 let currentIndex = 0; //현재 인덱스를 0으로 정한다
+let autoSlide = null;
 
-const activeSlide = () => {
+function activeSlide() {
+    const cards = document.querySelectorAll(".card");
     const isMobile = window.innerWidth <= 760;
-    if(isMobile){
-        slideWrap.style.transform = `translateX(-${currentIndex * 200}px)`;
-        return;
-    }
+    const slideWidth = isMobile ? 200 : 427;
 
-    slideWrap.style.transform = `translateX(-${currentIndex * 427}px)`;
-    cards.forEach((c,i)=>{
+    slideWrap.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+    if(!isMobile){
+        cards.forEach((c,i)=>{
         c.classList.toggle("active", i === currentIndex);
-    });
-};
+        });
+    }
+} // 슬라이드 이동 로직 최적화
 
-const nextSlide = () => {
-    currentIndex = (currentIndex +1) % total; // 슬라이드가 끝났을 때 다시 처음으로 돌아온다
+function nextSlide() {
+    currentIndex = (currentIndex +1) % slides.length;
     activeSlide();
 }
 
-const prevSlide = () => {
-    currentIndex = (currentIndex -1 +total) % total; // 음수로 떨어지지 않게 막는다
+function prevSlide() {
+    currentIndex = (currentIndex -1 +slides.length) % slides.length;
     activeSlide();
 }
 
-let autoSlide = setInterval(nextSlide, 5000); //nextSlide를 5초 간격으로 실행한다
+//--
+//자동슬라이드
 
-if(window.innerWidth <= 760) {
-    clearInterval(autoSlide);
+function startSlide(){
+    stopSlide();
+    if(window.innerWidth > 760) {
+        autoSlide = setInterval(nextSlide, 5000);
+    }
+}
+
+function stopSlide() {
+    if(autoSlide) clearInterval(autoSlide);
 }
 
 //버튼 연결
-document.querySelector(".prev").addEventListener("click", () => {
+prevBtn.addEventListener("click", () => {
     prevSlide();
-})
+    startSlide();
+});
 
-document.querySelector(".next").addEventListener("click",() => {
+nextBtn.addEventListener("click",() => {
     nextSlide();
-})
+    startSlide();
+});
+
+window.addEventListener("resize", () =>{
+    renderSlide();
+    activeSlide();
+    startSlide();
+});
+
+//---초기실행
+renderInfo();
+renderSlide();
+activeSlide();
+startSlide();

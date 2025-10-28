@@ -39,51 +39,20 @@ const dotsControl = document.querySelector(".controls"); //도트 생성 구역
 //슬라이드 상태의 변수 선언
 let mainCurrentIndex = 0; //처음 보여줄 인덱스 번호
 let currentTranslate = 0; //translate 값
+let slideWidth = window.innerWidth;
 const slideCount = mainSlides.length; // 총 슬라이드 갯수
 let dots = []; // dots 저장 배열
 
 
 //뷰포트 타입에 따라 이미지 타입 변경하는 삼항연산자
-function getImgUrl(item) {
-    return window.innerWidth <= 760 ? item.mobile : item.pc;
-}
+const getImgUrl = (item) => 
+    window.innerWidth <= 760 ? item.mobile : item.pc;
 
-//dot 생성
-function createDots() {
-    for(let i = 0; i < slideCount; i++){
-        const dot = document.createElement("div");
-        dot.classList.add("dot");
-        if(i === 0){
-            dot.classList.add("active"); //첫번째 dot 활성화
-        }
-        dotsControl.append(dot);
-        dot.addEventListener("click", () => goToSlide(i));
-        dots.push(dot);
-    }
-}
+//슬라이드 생성
+function renderSlide() {
+    const fragment = document.createDocumentFragment();
 
-//dot의 active 상태 갱신, index 번호가 슬라이드 번호와 같으면 active를 추가하겠다
-function newDots() {
-    dots.forEach((dot, index) => {
-        dot.classList.toggle("active", index === mainCurrentIndex);
-    });
-}
-
-//슬라이드 이동
-function goToSlide(index) {
-    if(index < 0){
-        index = slideCount - 1;
-    }
-    if(index >= slideCount) index = 0;
-    mainCurrentIndex = index;
-    currentTranslate = -mainCurrentIndex * window.innerWidth;
-
-    slideBox.style.transform = `translateX(${currentTranslate}px)`; //이동할 px값을 계산한다
-    newDots(); //슬라이드 이동할 때마다 dots의 active 상태를 계속 업데이트
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-    mainSlides.forEach((item, index) => {
+    mainSlides.forEach((item) => {
     const slideItem = document.createElement("li");
     slideItem.classList.add("main1-slide-item");
 
@@ -91,8 +60,63 @@ window.addEventListener("DOMContentLoaded", () => {
     img.src = getImgUrl(item);
     img.alt = item.title;
     slideItem.appendChild(img);
-    slideBox.appendChild(slideItem);
+
+    fragment.appendChild(slideItem);
     });
-    createDots();
-    goToSlide(0);
-}); // dom이 완전히 로드되면 이벤트를 실행해라.
+    slideBox.innerHTML = "";
+    slideBox.appendChild(fragment);
+}
+
+//도트 생성
+function createDots() {
+    const fragment = document.createDocumentFragment();
+    dots = [];
+
+    for(let i = 0; i < slideCount; i++){
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        if(i === 0) dot.classList.add("active");
+
+        dot.addEventListener("click", () => goToSlide(i));
+        dots.push(dot);
+        fragment.appendChild(dot);
+    }
+    dotsControl.innerHTML = "";
+    dotsControl.appendChild(fragment);
+}
+
+//dot의 active 상태 갱신, index 번호가 슬라이드 번호와 같으면 active를 추가하겠다
+function updateDots() {
+    dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === mainCurrentIndex);
+    });
+}
+
+//슬라이드 이동
+function goToSlide(index) {
+  if (index < 0) index = slideCount - 1;
+  if (index >= slideCount) index = 0;
+
+  mainCurrentIndex = index;
+  currentTranslate = -mainCurrentIndex * slideWidth;
+
+  slideBox.style.transform = `translateX(${currentTranslate}px)`;
+  updateDots();
+}
+
+function handleResize() {
+  const newWidth = window.innerWidth;
+  if (newWidth === slideWidth) return; // 불필요한 재렌더 방지
+  slideWidth = newWidth;
+
+  renderSlides();
+  goToSlide(mainCurrentIndex); // 현재 위치 유지
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  renderSlide();
+  createDots();
+  goToSlide(0);
+});
+
+window.addEventListener("resize", handleResize);
