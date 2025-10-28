@@ -26,6 +26,7 @@ body {
     /* margin-top: 20px; */
     display: flex;
     align-items: flex-start;
+    /* 서브메뉴 내려올 공간 확보 */
     justify-content: space-between;
     height: 80px;
     overflow: hidden;
@@ -35,6 +36,7 @@ body {
 
 .header-inner:hover {
     height: 300px;
+    /* hover 시 inner가 커짐 */
 }
 
 .header-logo img {
@@ -50,8 +52,8 @@ nav.header-nav {
 .header-nav-list {
     list-style: none;
     display: flex;
-    gap: 10px;
-    width: 200%;
+    gap: 40px;
+    width: 100%;
 }
 
 .header-nav-item {
@@ -75,6 +77,7 @@ nav.header-nav {
     background-color: #ffcc00;
 }
 
+/* 서브 메뉴 기본 숨김 */
 .header-submenu {
     list-style: none;
     opacity: 0;
@@ -84,6 +87,7 @@ nav.header-nav {
     margin-top: 10px;
 }
 
+/* hover 시 서브 메뉴 표시 */
 .header-inner:hover .header-submenu {
     opacity: 1;
     max-height: 200px;
@@ -130,6 +134,7 @@ nav.header-nav {
     transition: all 0.25s ease;
 }
 
+/* 링크 전체에 flex 적용 (이미지 정렬 안정화) */
 .header-nav-move-bar-link-click a {
     display: flex;
     align-items: center;
@@ -143,7 +148,7 @@ nav.header-nav {
     object-fit: contain;
 }
 
-
+/* hover 시 효과 */
 .header-nav-move-bar-link-click:hover {
     background-color: #ffcc00;
     border-style: none;
