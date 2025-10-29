@@ -1,12 +1,3 @@
-
-#menu {
-    display: flex;
-    width:100%;
-    height:100vh;
-    justify-content: center;
-    background: #fff;
-}
-
 .main2-box{
     display: flex;
     position: relative;
@@ -296,6 +287,7 @@
         height: 107px;
         opacity: 1;
         overflow: visible;
+        background: #fff;
     }
 
     .slide-item-area {
