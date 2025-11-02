@@ -1,0 +1,111 @@
+[
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250807002845_1754494125453_R6lUeBVpnu.jpg", "name": "초코젤라또 말차라떼", "enName":"Choco-Gelato Matcha Tea Latte", "info":"진하고 꾸덕한 초코 젤라또를 제주산 고품질 말차, 쌉싸름한 블렌딩 커피와 함께 즐기는 말차 에스프레소 라떼", "tags": ["커피"],  "size":591, "kcal":351.1, "allergy":"우유, 대두, 고카페인 함유", "sf":5.2, "sugar":43.5, "Na":85.1, "Pt":7.7, "caf":243.5},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320000737_1742396857693_ngpZI3EbLM.jpg", "name": "(HOT)헛개리카노", "enName":"Oriental Raisin-Tea Americano", "info":"국내산 헛개수와 메가MGC커피만의 아메리카노를 더해 고소한 맛이 조화로운 블렌딩 커피", "tags": ["커피"], "tem":["hot"],  "size":591, "kcal":36.1, "allergy":"", "sf":0.1, "sugar":0.0, "Na":11.7, "Pt":1.3, "caf":181.6},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320000925_1742396965069_ekSqAIVc1L.jpg", "name": "(ICE)헛개리카노", "enName":"riental Raisin-Tea Americano", "info":"국내산 헛개수와 메가MGC커피만의 아메리카노를 더해 고소한 맛이 조화로운 블렌딩 커피", "tags": ["커피"],  "size":591, "kcal":34.7, "allergy":"고카페인 함유", "sf":0.1, "sugar":40.0, "Na":8.4, "Pt":1.0, "caf":181.2},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320004326_1742399006488_yI4cvwXy6N.jpg", "name": "왕메가카페라떼", "enName":"BIG MEGA Caffe Latte", "info":"진한 에스프레소와 부드러운 우유가 어우러져 고소한 풍미를 완성한 메가MGC커피만의 왕메가사이즈 라떼", "tags": ["커피"],  "size":946, "kcal":269.4, "allergy":"우유, 고카페인 함유", "sf":7.1, "sugar":28.4, "Na":136.2, "Pt":15, "caf":347.1},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320001838_1742397518902_MCGDHqjxXi.jpg", "name": "왕메가헛개리카노", "enName":"BIG MEGA Oriental Raisin-Tea Americano", "info":"국내산 헛개수와 아메리카노를 블렌딩해 고소한 맛이 더욱 커진 왕메가사이즈 커피", "tags": ["커피"],  "size":946, "kcal":55.7, "allergy":"고카페인 함유", "sf":0.1, "sugar":0.0, "Na":12.2, "Pt":0.9, "caf":234.6},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240904234012_1725460812247_PgldrBOdUW.jpg", "name": "할메가미숫커피", "enName":"MEGA MGC Mix Coffee Blend with Grain Powder", "info":"곡물의 향이 고소한 미숫가루와 달달한 믹스커피의 황금비율 조합", "tags": ["커피"],  "size":591, "kcal":413, "allergy":"밀, 우유, 대두, 고카페인 함유", "sf":7.7, "sugar":45.4, "Na":17.9, "Pt":6.4, "caf":172.9},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610132459_1717993499610_KiXcTR2q5P.jpg", "name": "연유라떼", "enName":"Condensed Milk Latte", "info":"향기로운 에스프레소 샷, 부드러운 우유 그리고 달콤한 연유가 조화롭게 어우러진 라떼", "tags": ["커피"],  "size":591, "kcal":351.5, "allergy":"우유, 고카페인 함유", "sf":8.5, "sugar":31.9, "Na":123.6, "Pt":11.8, "caf":165.9},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105645_1717984605982_8i5CoHU2NV.jpg", "name": "아메리카노", "enName":"Americano", "info":"[기본2샷]메가MGC커피 블렌드 원두로 추출한 에스프레소에 물을 더해, 풍부한 바디감을 느낄 수 있는 스탠다드 커피.", "tags": ["커피"], "tem":["hot"],  "size":591, "kcal":12.2, "allergy":"고카페인 함유", "sf":0.0, "sugar":0.0, "Na":2.4, "Pt":0.9, "caf":204.2},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320004730_1742399250273_UPT0oK5fSb.jpg", "name": "왕메가사과유자", "enName":"BIG MEGA Apple Citron Tea", "info":"애플티의 향긋함과 유자청의 상큼달콤함을 느낄 수 있는 메가MGC커피만의 왕메가사이즈 과일티", "tags": ["티"],  "size":946, "kcal":313.3, "allergy":"", "sf":0.1, "sugar":76.7, "Na":120.4, "Pt":0.2, "caf":0.0},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20241106234009_1730904009276_fu30eMash6.jpg", "name": "(HOT)상큼 리치티", "enName":"(HOT) Zesty Lychee Tea", "info":"리치, 라임, 망고스틴 베이스에 레드 커런트, 로즈마리를 더한 상큼한 과일티", "tags": ["티"], "tem":["hot"],  "size":591, "kcal":274.8, "allergy":"복숭아", "sf":0.1, "sugar":64.1, "Na":10.1, "Pt":0.7, "caf":0.0},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610113625_1717986985834_J_PTjRFq7P.jpg", "name": "왕메가아이스티", "enName":"32oz MEGA Peach Iced Tea", "info":"깊은 맛의 홍차와 달콤한 복숭아의 은은한 향이 어우러진 왕 메가 사이즈 아이스티", "tags": ["티"],  "size":946, "kcal":474.8, "allergy":"복숭아, 아황산류", "sf":0.0, "sugar":96.6, "Na":119.2, "Pt":0.4, "caf":41.2},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610113548_1717986948917_wK8B5fR4h5.jpg", "name": "제로 복숭아 아이스티", "enName":"ZERO Sugar Peach Iced Tea", "info":"깊게 우려진 홍차와 은은한 복숭아향의 아이스티를 제로슈가, 제로칼로리로 즐길 수 있는 음료 *대체당(알룰로스,에리스리톨)을 과도하게 섭취 시 개인에 따라 복통 및 설사 등을 유발할 수 있으니 주의하세요.", "tags": ["티"],  "size":710, "kcal":26.1, "allergy":"복숭아, 아황산류", 
+    "sf":0.0, "sugar":0.7, "Na":5.3, "Pt":0.1, "caf":14.5},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610104441_1717983881331_6kaOJy5ayw.jpg", "name": "녹차", "enName":"Green Tea", "info":"깊고소한 감칠맛과 부드러운 목넘김으로 산뜻하게 마음을 위로하는 국내산 녹차.", "tags": ["티"], "tem":["hot"],  "size":591, "kcal":0.7, "allergy":"", "sf":0.0, "sugar":0.0, "Na":4.2, "Pt":0.2, "caf":65.3},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105629_1717984589552_V9ta2Qw90q.jpg", "name": "사과유자차", "enName":"Applecitron Tea", "info":"애플티의 향긋함과 유자청의 상큼달콤함을 한컵에 담아낸 과일티.", "tags": ["티"], "tem":["hot"],  "size":591, "kcal":227.1, "allergy":"", "sf":0.0, "sugar":47.0, "Na":89.3, "Pt":0.3, "caf":0.0},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105659_1717984619283_Ssc082a5GK.jpg", "name": "얼그레이", "enName":"Earl Grey", "info":"홍차 특유의 풍부한 플레이버를 만끽할 수 있는 허브티.", "tags": ["티"], "tem":["hot"],  "size":591, "kcal":0.7, "allergy":"고카페인 함유", "sf":0.0, "sugar":0.0, "Na":4.2, "Pt":0.2, "caf":73.4},
+    
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105908_1717984748214_qc34s7Vkq5.jpg", "name": "캐모마일", "enName":"Chamomile", "info":"마음을 진정 시켜주는 산뜻한 풀내음을 느낄 수 있는 허브티", "tags": ["티"], "tem":["hot"],  "size":591, "kcal":0.5, "allergy":"", "sf":0.0, "sugar":0.0, "Na":5.5, "Pt":0.0, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320003308_1742398388471_NLtoviExwY.jpg", "name": "블루베리플럼주스", "enName":"Blueberry Plum Juice", "info":"새콤달콤한 블루베리와 식이섬유가 풍부한 플럼, 프리바이오틱스를 더해 건강한 블렌딩 주스", "tags": ["에이드&주스"],  "size":591, "kcal":257.2, "allergy":"복숭아", "sf":0.1, "sugar":35.7, "Na":62.6, "Pt":0.7, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320003451_1742398491079_wWQva965Sn.jpg", "name": "골드키위주스", "enName":"Gold Kiwi Juice", "info":"상큼달콤한 프리미엄 골드키위에 밀크씨슬을 더해 일상의 활력을 선사하는 건강한 블렌딩 주스", "tags": ["에이드&주스"],  "size":591, "kcal":202.8, "allergy":"", "sf":0.1, "sugar":43.1, "Na":15.0, "Pt":1.2, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610114741_1717987661472_LqJw6WITHO.jpg", "name": "딸기주스", "enName":"Strawberry Juice", "info":"새콤달콤한 딸기주스에 피쉬 콜라겐을 더해 건강한 블렌딩 주스", "tags": ["에이드&주스"],  "size":591, "kcal":228.0, "allergy":"", "sf":0.0, "sugar":54.0, "Na":11.0, "Pt":1.5, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610132145_1717993305587_JyUa7vPj3s.jpg", "name": "라임모히또", "enName":"Lime Mojito", "info":"상큼한 라임과 달콤한 향기의 애플민트가 어우러져 상쾌함을 한잔에 가득 채운 무알콜 모히또 음료.", "tags": ["에이드&주스"],  "size":710, "kcal":290.5, "allergy":"", "sf":0.0, "sugar":70.4, "Na":41.7, "Pt":0.4, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610114557_1717987557279_GKXThr0HAc.jpg", "name": "레몬에이드", "enName":"Lemonade", "info":"시트러스향 가득한 레몬의 상큼함과 톡쏘는 탄산의 상쾌함이 만난 청량 에이드.", "tags": ["에이드&주스"],  "size":710, "kcal":196.8, "allergy":"", "sf":0.0, "sugar":35.1, "Na":71.3, "Pt":0.3, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610132302_1717993382502_3JianCydlm.jpg", "name": "블루레몬에이드", "enName":"Blue Lemon Ade", "info":"레몬에이드의 상큼한 청량감에 블루큐라소의 진한 향미를 더한 에이드.", "tags": ["에이드&주스"],  "size":710, "kcal":225.0, "allergy":"", "sf":0.0, "sugar":36.5, "Na":77.2, "Pt":0.2, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610132602_1717993562754_oDf7jybQYy.jpg", "name": "자몽에이드", "enName":"Grapefruit Ade", "info":"자몽의 달콤쌉싸름한 맛과 탄산의 톡쏘는 목넘김이 어우러진 트로피컬 에이드.", "tags": ["에이드&주스"],  "size":710, "kcal":203.8, "allergy":"", "sf":0.0, "sugar":40.7, "Na":3.3, "Pt":0.3, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610115123_1717987883226_DMMQB84jmS.jpg", "name": "청포도에이드", "enName":"Green Grape Ade", "info":"산뜻한 청포도와 상쾌한 탄산의 달달한 조화가 인상적인 에이드.", "tags": ["에이드&주스"],  "size":710, "kcal":317.0, "allergy":"", "sf":0.0, "sugar":77.7, "Na":17.9, "Pt":0.2, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320003134_1742398294871_z9t_oXfbA6.jpg", "name": "블루베리요거트스무디", "enName":"Blueberry Yogurt Smoothie", "info":"새콤달콤한 블루베리와 산뜻한 요거트가 만나 조화로운 스무디", "tags": ["스무디&프라페"],  "size":591, "kcal":531.8, "allergy":"우유", "sf":2.5, "sugar":109.3, "Na":133.5, "Pt":6.0, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320003615_1742398575781_Dy89tEHQTL.jpg", "name": "귤 톡톡 젤리스무디", "enName":"Tangerine Jelly Smoothie", "info":"톡톡 터지는 상큼한 귤의 과육과 몽글한 젤리식감이 매력적인 스무디", "tags": ["스무디&프라페"],  "size":591, "kcal":364.3, "allergy":"", "sf":0.0, "sugar":89.2, "Na":81.4, "Pt":0.5, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610112826_1717986506337_AauGwyguRG.jpg", "name": "골드망고스무디", "enName":"Gold Mango Smoothie", "info":"황금빛 골드망고가 진하게 느껴지는 부드럽고 상큼 달콤한 스무디", "tags": ["스무디&프라페"],  "size":591, "kcal":209.5, "allergy":"", "sf":0.1, "sugar":38.4, "Na":20.7, "Pt":0.8, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610132830_1717993710301_PxTeTM9Suh.jpg", "name": "코코넛 커피 스무디", "enName":"Coconut Coffee Smoothie", "info":"바삭하고 고소한 코코넛 칩을 올리고 쌉싸름한 커피와 달콤한 코코넛이 조화로운 스무디", "tags": ["스무디&프라페"],  "size":591, "kcal":746.5, "allergy":"우유, 고카페인 함유", "sf":29.3, "sugar":61.4, "Na":1347.1, "Pt":9.4, "caf":173.8},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610132048_1717993248890_NW1QEUmFtQ.jpg", "name": "딸기쿠키프라페", "enName":"Strawberry Cookie Frappe", "info":"부드러운 바닐라와 달달한 딸기, 바삭한 오레오 쿠키가 달콤한 하모니를 선물하는 프라페.", "tags": ["스무디&프라페"],  "size":591, "kcal":583.3, "allergy":"우유, 밀, 대두", "sf":12.5, "sugar":65.4, "Na":247.7, "Pt":7.7, "caf":2.6},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610115315_1717987995816_oiPZ2u5dJr.jpg", "name": "쿠키프라페", "enName":"Cookie Frappe", "info":"바삭하고 달콤한 오레오와 고소한 우유, 부드러운 바닐라향의 조화를 느낄 수 있는 프라페.", "tags": ["스무디&프라페"],  "size":591, "kcal":697.8, "allergy":"우유, 밀, 대두", "sf":15.6, "sugar":59.7, "Na":411.7, "Pt":9.8, "caf":6.8},
+
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610112933_1717986573712__ob6vfs5Id.jpg", "name": "녹차프라페", "enName":"Green Tea Frappe", "info":"향긋한 녹차 위에 우유와 휘핑크림을 더해 더 부드럽게 즐길 수 있는 프라페.", "tags": ["스무디&프라페"],  "size":591, "kcal":620.0, "allergy":"우유, 대두, 고카페인 함유", "sf":10.2, "sugar":80.7, "Na":129.9, "Pt":6.0, "caf":198.8},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610132117_1717993277823_KRGDVA4aeJ.jpg", "name": "딸기요거트스무디", "enName":"Strawberry Yogurt Smoothie", "info":"요거트의 상큼함과 딸기의 상큼함을 상냥하게 어우른 상큼 스무디.", "tags": ["스무디&프라페"],  "size":591, "kcal":388.8, "allergy":"우유", "sf":2.0, "sugar":62.5, "Na":66.7, "Pt":6.0, "caf":0.0},
+
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320004527_1742399127150_aZXw3Wbf4H.jpg", "name": "디카페인 왕메가카페라떼", "enName":"Decaf BIG MEGA Caffe Latte", "info":"진한 에스프레소와 부드러운 우유가 어우러져 고소한 풍미를 완성한 메가MGC커피만의 왕메가사이즈 라떼", "tags": ["디카페인"],  "size":946, "kcal":278.7, "allergy":"우유", "sf":7.2, "sugar":26.4, "Na":136.4, "Pt":10.6, "caf":11.2},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250402185107_1743587467742_jeeQmgRshX.jpg", "name": "디카페인 라이트 바닐라 아몬드라떼", "enName":"Decaf Light vanilla almond latte", "info":"비건 음료 아몬드브리즈와 칼로리를 낮춘 라이트 바닐라 시럽이 만나 가볍지만 부드~러워진 디카페인 라떼", "tags": ["디카페인"],  "size":591, "kcal":65.9, "allergy":"", "sf":0.4, "sugar":4.1, "Na":120.4, "Pt":1.8, "caf":9.5},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105545_1717984545629_CaGhOpvAnm.jpg", "name": "디카페인 카푸치노", "enName":"Decaf Cappuccino", "info":"디카페인 에스프레소와 부드러운 우유가 어우러져 고소한 풍미를 완성한 카푸치노.", "tags": ["디카페인"], "tem":["hot"],  "size":591, "kcal":152.9, "allergy":"우유", "sf":4.5, "sugar":10.4, "Na":80.6, "Pt":8.1, "caf":11.3},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105117_1717984277710_7BjonXSBFE.jpg", "name": "디카페인 카페라떼", "enName":"Decaf Cafe Latte", "info":"디카페인 에스프레소와 부드러운 우유가 어우러져 고소한 풍미를 완성한 라떼.", "tags": ["디카페인"], "tem":["hot"],  "size":591, "kcal":178.5, "allergy":"우유", "sf":4.8, "sugar":11.4, "Na":102.1, "Pt":10.0, "caf":17.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105117_1717984277710_7BjonXSBFE.jpg", "name": "디카페인 바닐라라떼", "enName":"Decaf Vanilla Latte", "info":"디카페인으로 즐기는 바닐라의 짙은 향과 풍부한 폼 밀크의 조화가 인상적인 달콤한 라떼.", "tags": ["디카페인"], "tem":["hot"],  "size":591, "kcal":219.5, "allergy":"우유", "sf":4.7, "sugar":29.1, "Na":85.8, "Pt":8.1, "caf":8.9},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105117_1717984277710_7BjonXSBFE.jpg", "name": "디카페인 헤이즐넛 라떼", "enName":"Decaf Hazelnut Latte", "info":"부드러운 카페라떼에 헤이즐넛의 풍부한 향과 달콤함을 담아 향긋하게 즐길 수 있는 디카페인 라떼.", "tags": ["디카페인"], "tem":["hot"],  "size":591, "kcal":240.0, "allergy":"우유", "sf":4.3, "sugar":18.2, "Na":81.4, "Pt":8.9, "caf":9.4},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105145_1717984305671_2_yE7sXma9.jpg", "name": "디카페인 카페모카", "enName":"Decaf Cafe Mocha", "info":"초코를 만나 풍부해진 디카페인 에스프레소와 고소한 우유, 부드러운 휘핑크림까지 더해 달콤하게 즐기는 커피.", "tags": ["디카페인"], "tem":["hot"],  "size":591, "kcal":360.3, "allergy":"우유, 대두", "sf":10.3, "sugar":39.2, "Na":153.2, "Pt":10.8, "caf":26.8},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105207_1717984327186_Sgj9kfKYCi.jpg", "name": "디카페인 아메리카노", "enName":"Decaf Americano", "info":"향과 풍미 그대로 카페인만을 낮춰 민감한 분들도 안심하고 매일매일 즐길 수 있는 디카페인 커피", "tags": ["디카페인"], "tem":["hot"],  "size":710, "kcal":9.5, "allergy":"", "sf":0.1, "sugar":0.0, "Na":4.4, "Pt":0.5, "caf":10.8},
+
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250116001724_1736954244791_8qDsY0gj14.jpg", "name": "딸기라떼", "enName":"Strawberry Latte", "info":"딸기과육이 풍부히 느껴지는 스테디 셀러 산뜻하고 달콤한 딸기가 가득해 부드러운 우유와 어우러져 더욱 기분 좋게 즐기는 아이스 라떼", "tags": ["음료"],  "size":591, "kcal":366.4, "allergy":"우유", "sf":3.0, "sugar":47.3, "Na":50.0, "Pt":5.8, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610114853_1717987733636_Uq2ZKYINXZ.jpg", "name": "왕메가초코", "enName":"32oz MEGA Chocolate", "info":"부드러운 우유에 진한 초코소스가 어우러져 달콤하게 입맛을 깨우는 왕 메가 사이즈 초코음료", "tags": ["음료"],  "size":946, "kcal":574.2, "allergy":"우유", "sf":6.7, "sugar":77.3, "Na":267.1, "Pt":11.9, "caf":35.6},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610104240_1717983760778_agCooQEUb4.jpg", "name": "고구마라떼", "enName":"Sweet Potato Latte", "info":"달콤하고 고소한 고구마와 부드러운 우유가 만나 누구나 즐기기 좋은 든든한 라떼.", "tags": ["음료"], "tem":["hot"],  "size":591, "kcal":310.5, "allergy":"우유, 아몬드", "sf":5.0, "sugar":18.8, "Na":96.5, "Pt":9.5, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610104323_1717983803197_Dpwa_RK4_F.jpg", "name": "곡물라떼", "enName":"Grain Latte", "info":"우유에 곡물을 더해 고소하고 든든하게 즐기는 라떼.", "tags": ["음료"], "tem":["hot"],  "size":591, "kcal":467.5, "allergy":"우유, 밀, 대두, 아몬드", "sf":4.8, "sugar":40.5, "Na":100.3, "Pt":18.1, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610105954_1717984794244_2JeEMNYiCL.jpg", "name": "토피넛라떼", "enName":"Toffeenut Latte", "info":"은은하게 퍼지는 카라멜의 달달한 향기와 견과의 고소함을 한입에 즐길 수 있는 라떼.", "tags": ["음료"], "tem":["hot"],  "size":591, "kcal":373.1, "allergy":"우유, 대두", "sf":8.1, "sugar":38.3, "Na":182.0, "Pt":9.6, "caf":46.4},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610104456_1717983896154_TxgXQHRHiM.jpg", "name": "녹차라떼", "enName":"Green Tea Latte", "info":"향긋한 녹차에 우유를 더해 입 안에 부드러운 푸릇함을 선물하는 라떼.", "tags": ["음료"], "tem":["hot"],  "size":591, "kcal":280.4, "allergy":"우유, 고카페인 함유", "sf":4.4, "sugar":14.3, "Na":85.0, "Pt":9.1, "caf":114.5},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610132638_1717993598875_AQ4q6GUaJD.jpg", "name": "오레오초코라떼", "enName":"Oreo Chocolate Latte", "info":"진한 초코와 리얼 오레오를 블렌딩해 씹는 맛을 더한 달콤한 아이스 라떼.", "tags": ["음료"],  "size":591, "kcal":475.1, "allergy":"우유, 밀, 대두", "sf":10.4, "sugar":30.1, "Na":258.2, "Pt":9.7, "caf":11.1},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240610112956_1717986596859_dSAYDVVaV2.jpg", "name": "흑당버블밀크티라떼", "enName":"Brown Sugar Bubble Milktea Latte", "info":"타바론 얼그레이 홍차의 깊은 맛을 살린 일크티 라떼에 진한 흑당과 흑당 버블의 달콤함을 채운 음료.", "tags": ["음료"],  "size":591, "kcal":330.2, "allergy":"우유", "sf":4.3, "sugar":24.4, "Na":106.7, "Pt":7.6, "caf":14.3},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250902150350_1756793030299_wEBKiCWct1.jpg", "name": "누룽누룽 바삭 프라페", "enName":"Nurung-Ji Crisp Frappe", "info":"대왕님표 여주쌀로 만든 누룽지를 넣어 달달 꼬소~한 프라페 위로 바삭바삭한 누룽지를 한번 더 올린 가을시즌 한정 프라페", "tags": ["신상품"],  "size":591, "kcal":591.3, "allergy":"우유, 대두", "sf":12.8, "sugar":53.2, "Na":250.5, "Pt":10.7, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250902151729_1756793849059_kxfe2Fyfym.jpg", "name": "피넛버터 초코 프라페", "enName":"Peanut Butter Chocolate Frappe", "info":"부드럽고 진한 누가초코 프라페에, 짭조름하고 고소한 피넛버터를 더해 단맛과 풍미가 진하게 어우러진 프라페", "tags": ["신상품"],  "size":591, "kcal":639.4, "allergy":"우유, 대두, 땅콩", "sf":9.6, "sugar":89.5, "Na":309.5, "Pt":15.2, "caf":31.3},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250902165647_1756799807984_urcBP5GGO4.jpg", "name": "할메가커피 스무디", "enName":"Mega Mix Coffee Smoothie", "info":"부드럽고 달달한 믹스 커피 맛 그대로를 시원한 스무디로 담아낸 시그니처 커피 음료", "tags": ["신상품"],  "size":591, "kcal":532.1, "allergy":"우유, 대두, 고카페인 함유", "sf":10.3, "sugar":54.9, "Na":25.0, "Pt":2.0, "caf":255.7},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250902165903_1756799943713_6c56kbWK2q.jpg", "name": "애플베리 스무디", "enName":"Apple Berry Smoothie", "info":"잘익은 사과의 진한 단맛과 딸기의 상큼한 맛이 어우러져 새콤달콤 기분까지 상큼해지는 아는 맛이 무섭스무디", "tags": ["신상품"],  "size":591, "kcal":387.7, "allergy":"", "sf":0.1, "sugar":90.1, "Na":86.6, "Pt":0.4, "caf":0.0},
+
+    { "url":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250902170131_1756800091704_0WcOgcPRJR.jpg", "name": "제로 애사비 젤리에이드", "enName":"ZERO Sugar Aesabi Jelly Ade", "info":"유기농 애사비를 넣은 에이드에 레몬이 콕콕 박힌 애사비 젤리를 넣어 더욱 가볍고 청량한 제로 에이드 *대체당(알룰로스 등)을 과도하게 섭취 시 개인에 따라 복통 및 설사 등을 유발 할 수 있으니 주의하세요.", "tags": ["신상품"],  "size":710, "kcal":101.0, "allergy":"", "sf":0.0, "sugar":0.0, "Na":186.1, "Pt":0.0, "caf":0.0}
+]
