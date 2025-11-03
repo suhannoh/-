@@ -1,3 +1,23 @@
+// document.addEventListener('DOMContentLoaded', () => {
+
+//   const menuList = document.querySelector(".menu-list");
+//   const pageList = document.querySelector(".page-list");
+//   const filterCheckboxes = document.querySelectorAll('.filter-list input[type="checkbox"]');
+//   const banner = document.querySelector('.banner-box');
+
+//   if (!menuList || !pageList || !filterCheckboxes) return; //만약 현재 dom에 위의 세 가지가 없으면 실행중지 (안전장치)
+
+//   let menuData = [];
+//   let filteredMenu = [];
+//   let currentPage = 1;
+//   const itemsPerPage = 20;
+
+// });
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const menuList = document.querySelector('.menu-list'); //메뉴 ul
   const pageList = document.querySelector('.page-list'); //페이지네이션 ul
@@ -46,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMenu(); 
     renderPagination();
   }
-
 
   //메뉴 렌더링
   function renderMenu() {

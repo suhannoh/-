@@ -1,0 +1,31 @@
+[
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250902170653_1756800413075_x13ar0e3qK.jpg", "name":"피넛버터 애플 샌드", "enName":"Peanut Butter Apple Sandwich", "info":"부드러운 피넛버터크림에 사과과육이 가득 씹히는 사과잼을 넣어 달콤 고소한 매력을 한 번에 느낄 수 있는 디저트", "gram":81, "kcal":312.0, "allergy":"밀, 대두, 우유, 땅콩", "sf":9.0, "sugar":8.0, "Na":200.0, "Pt":6.0, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250902170923_1756800563948_7uR3KDEJ6o.jpg", "name":"매콤 비빔주먹빵", "enName":"Spicy Bibim Bread", "info":"고소한 삼각 빵 속을 대왕님표 여주쌀이 함유된 매콤한 비빔밥으로 가득 채운, 매콤 고소한 비빔주먹빵", "gram":100, "kcal":280.0, "allergy":"토마토, 쇠고기, 대두, 밀, 우유, 조개(굴), 돼지고기, 닭고기, 계란", "sf":4.0, "sugar":8.0, "Na":603.0, "Pt":8.0, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250902171808_1756801088394_2yZlbc_jH9.jpg", "name":"요거젤라또 초코베리믹스", "enName":"Yogurt Gelato Choco Berry Mix", "info":"초코쉘을 입힌 요거트 젤라또에 세가지 달콤상큼 베리와 초코링, 고소한 그래놀라를 더한, 시원달달 요거볼", "gram":227, "kcal":418.0, "allergy":"밀, 대두, 우유", "sf":10.0, "sugar":47.0, "Na":53.0, "Pt":5.0, "caf":0.0, "tags":["신상품"]},
+    
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250908170052_1757318452379_UdCOJe6_mQ.jpg", "name":"요거젤라또 씨리얼 초코베리믹스", "enName":"Yogurt Gelato Cereal Choco Berry Mix", "info":"초코쉘을 입힌 기존 요거트 젤라또에, 팥빙에서 즐기던 바삭한 믹스씨리얼을 베리믹스와 함께 듬뿍 더한 시원바삭 요거볼 (요거젤라또+믹스씨리얼+초코쉘+트리플믹스베리 조합)", "gram":233, "kcal":433.0, "allergy":"우유, 대두, 밀, 쇠고기", "sf":6.2, "sugar":49.0, "Na":183.0, "Pt":6.0, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250110194433_1736505873493_vTcz8ed6Rq.jpg", "name":"메가베리 아사이볼", "enName":"Mega Berry Acai Bowl", "info":"상큼달콤 아사이볼 속에 세가지의 달콤한 베리와 건강한 그래놀라가 더해져 시원 달달하게 즐길 수 있는 디저트", "gram":215, "kcal":313, "allergy":"밀", "sf":1, "sugar":43, "Na":12, "Pt":4, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20240417234451_1713365091631_ODTdh2wYkT.jpg", "name":"에그베이컨 모닝 버거", "enName":"Egg Bacon Burger", "info":"부드러운 브리오슈 번에 고소한 풍미가 가득한 프랑스산 프레지덩 버터로 만든 소스와 에그베이컨을 넣은 든든한 모닝 버거", "gram":115, "kcal":323, "allergy":"달걀, 우유, 대두, 밀, 돼지고기, 쇠고기, 조개류(굴)", "sf":6, "sugar":7, "Na":803, "Pt":9, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320005157_1742399517427_uoFbqBXPkO.jpg", "name":"치즈 품은 감자빵", "enName":"Cheese-stuffed potato bread", "info":"풍미 깊은 치즈와 포슬포슬한 감자를 가득 담아 낸 쌀가루로 만든 빵", "gram":"One size", "kcal":312, "allergy":"밀, 대두, 우유, 계란", "sf":4, "sugar":5, "Na":559, "Pt":12, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320005316_1742399596516_AFzCgw1nOL.jpg", "name":"엠지씨네 메가칩", "enName":"MGC Buckwheat chips", "info":"엠지씨 이름을 걸고 만들었다! 메밀로 만든 짭짤 고소한 김맛 건강스낵", "gram":"One size", "kcal":210, "allergy":"밀, 메밀, 우유, 대두", "sf":5, "sugar":1, "Na":223, "Pt":2, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320005622_1742399782617_e07BseWqq0.jpg", "name":"와앙 메가초코 크로칸슈", "enName":"Chocolate Croquant Choux", "info":"바삭한 초코 크로칸슈 안에 부드럽고 달콤한 초코 크림을 가득 채운 디저트", "gram":"One size", "kcal":274, "allergy":"우유, 대두, 밀, 계란", "sf":274, "sugar":20, "Na":97, "Pt":4, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250320005852_1742399932597_9UYpIwMrhd.jpg", "name":"로얄 밀크티 스모어 쿠키", "enName":"Royal Milk Tea Latte S'mores Cookie", "info":"화이트 초코칩이 콕콕 박힌 로얄밀크티맛 쿠키에 달콤하게 구운 마시멜로우가 만난 달콤한 쿠키", "gram":"One size", "kcal":552, "allergy":"달걀, 우유, 밀, 돼지고기(젤라틴), 대두", "sf":8, "sugar":30, "Na":362, "Pt":9, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250108231358_1736345638266_a6CINREE7t.jpg", "name":"와앙메리칸 뽀득 핫도그", "enName":"Big American Hot Dog", "info":"부드러운 빵 속에 뽀득 통통한 소시지를 넣어 더욱 맛있어진 와앙 큰 아메리칸식 핫도그", "gram":"One size", "kcal":424, "allergy":"알류(달걀), 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기", "sf":8, "sugar":6, "Na":870, "Pt":15, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250108231556_1736345756242_Hd8G3Im0Jw.jpg", "name":"버터버터 팥슈크림 페스츄리", "enName":"Red Bean & Custard Cream Pastry", "info":"버터의 풍미가 가득 바삭한 페스츄리 사이에 팥앙금과 슈크림을 가득 넣어 두 가지 맛을 반반 즐길 수 있는 페스츄리", "gram":"One size", "kcal":689, "allergy":"밀, 대두, 우유, 알류(달걀)", "sf":16, "sugar":10, "Na":718, "Pt":12, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"https://img.79plus.co.kr/megahp/manager/upload/menu/20250108231729_1736345849403_OiksxJxDsr.jpg", "name":"햄앤치즈샌드위치", "enName":"Ham & Cheese Sandwich", "info":"햄과 치즈의 조화로운 한끼를 만끽할 수 있는 샌드위치", "gram":"One size", "kcal":215, "allergy":"대두, 밀, 우유, 달걀, 돼지고기, 소고기, 조개류(굴), 닭고기", "sf":5, "sugar":5, "Na":360, "Pt":7, "caf":0.0, "tags":["신상품"]},
+
+    {"img":"", "name":"", "enName":"", "info":"", "gram":, "kcal":, "allergy":"", "sf":, "sugar":, "Na":, "Pt":, "caf":},
+
+    {"img":"", "name":"", "enName":"", "info":"", "gram":, "kcal":, "allergy":"", "sf":, "sugar":, "Na":, "Pt":, "caf":},
+]
