@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Notice</title>
+    <link rel="stylesheet" href="./notice/Notice.css">
+</head>
+<body>
+    <div class="title-content-box">
+        <div class="content-header"> 
+            <div class="header-inner">
+                <h4>Maga News</h4>
+                <h1>Mega Notice</h1>
+                <div>
+                  
+                  <ul class="content-location">
+                    <li>홈</li>
+                    <li>메가소식</li>
+                    <li>공지사항</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <div class="notice-main">
+
+            <div class="notice-main-h1">
+                <h1>메가MGC커피 공지사항</h1>
+            </div>
+            <div class="notice-main-div">메가MGC커피 소식을 알려드립니다.</div>
+            <div class="notice-input-search">
+                <select name="notice-select-option" class="notice-select">
+                    <option value="title">제목</option>
+                    <option value="detail">내용</option>
+                    <option value="name">이름</option>
+                </select>
+                <input type="text" placeholder="검색어 입력">
+                <button> 검색 </button>
+            </div>
+            <div class="notice-table-div"> 
+                <table class="notice-table">
+                    <colgroup>
+                        <col class="notice-num" style="width: 80px;">
+                        <col class="notice-subject">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <thead>         
+                        <tr class="notice-table-thead">    
+                            <th class="notice-num">번호</th>
+                            <th class="notice-subject">제목</th>
+                            <th>글쓴이</th>
+                            <th>날짜</th>
+                            <th>조회</th>
+                        </tr>
+                    </thead>
+                    <tbody class="notice-group">
+                        <tr>
+                            <td class="notice-num">3</td>
+                            <td class="notice-subject">메가커피 업그레이드</td>
+                            <td>내가씀</td>
+                            <td>까마귀날자</td>
+                            <td>1234</td>
+                        </tr>
+                        <!-- 여기에 들어가야함 -->
+                    </tbody>    
+                </table>
+            </div>
+        </div>
+
+        <div class="paging-buttons" style="text-align:center; margin-top:20px;">
+        <button onclick="changePage('first')">처음</button>
+        <button onclick="changePage('prev')">이전</button>
+        <span class="page-info">페이지가변</span>
+        <button onclick="changePage('next')">다음</button>
+        <button onclick="changePage('last')">마지막</button>
+        </div>
+
+    </div>
+</body>
+<script>
+let currentPage = 1;
+const perPage = 10;
+let data = [];
+
+// 데이터 불러오기
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then(res => res.json())
+  .then(json => {
+    data = json;
+    renderTable();
+    renderPageButtons();
+  });
+
+// 테이블 그리기
+function renderTable() {
+  const tbody = document.querySelector(".notice-group");
+  const start = (currentPage - 1) * perPage;
+  const end = start + perPage;
+  const pageData = data.slice(start, end);
+
+  tbody.innerHTML = pageData.map(p => `
+    <tr>
+      <td>${p.id}</td>
+      <td>${p.title}</td>
+      <td>작성자 ${p.userId}</td>
+      <td>2025-11-03</td>
+      <td> 123 </td>
+    </tr>
+  `).join("");
+
+  document.querySelector(".page-info").textContent = 
+    `${currentPage} / ${Math.ceil(data.length / perPage)} 페이지`;
+}
+
+// 페이지 이동
+function changePage(type) {
+  const totalPages = Math.ceil(data.length / perPage);
+
+  if (type === "first") currentPage = 1;
+  else if (type === "prev" && currentPage > 1) currentPage--;
+  else if (type === "next" && currentPage < totalPages) currentPage++;
+  else if (type === "last") currentPage = totalPages;
+
+  renderTable();
+}
+
+</script>
+
+
+</html>

@@ -1,0 +1,152 @@
+
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.title-content-box {
+    margin: 0 auto;
+}
+
+.content-header {
+    background-color: #444444;
+    min-height: 270px;
+    max-height: 370px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.header-inner {
+    padding: 2.5rem;
+}
+
+.header-inner h4 {
+    color: #fff;
+    font-size: clamp(1.2rem, 2.1vw, 1.2rem);
+    margin-bottom: 10px;
+}
+
+.header-inner h1 {
+    color: yellow;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 20px;
+}
+
+/* ul 및 li 설정 */
+.content-location {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* li 가로 중앙 정렬 */
+    gap: 1rem;              /* li 간격 */
+    margin-top: 1rem;       /* h1과 ul 사이 여백 */
+}
+.notice-main{
+    margin: auto;
+}
+/* 바로 아랫놈만 li이놈만 */
+/* before는 꾸미는요소임 ~앞에 느낌쓰  */
+/* li 앞에 > 표시, 첫 항목 제외 */
+.content-location > li::before {
+    content: ">";
+    margin-right: 0.5rem;  /* 텍스트와 간격 */
+    color: #ffffff;
+}
+
+
+/* before는 꾸미는요소임 ~앞에 느낌쓰  */
+/* 첫 번째 li는 기호 제거 */
+.content-location > li:first-child::before {
+    content: "";
+}
+.notice-main-h1{
+    margin:3rem;
+}
+.notice-main-div{
+    margin:2rem;
+}
+/* li 세로 중앙 정렬 */
+.content-location > li {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+}
+.notice-table-div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 1280px;
+}
+
+.notice-table{
+    border-top: 2px solid lavender;
+    width: 80%;
+    font-size: 0.8rem;
+}
+
+.notice-group {
+    border: 1px solid black;
+}
+.notice-group tr{
+    /* text-align: left; */
+    /* align-items: end; */
+
+}
+
+.notice-table th,
+.notice-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.notice-input-search{
+    max-width: 1280px;
+    display: flex;
+    justify-content: left;
+    gap: 0.2rem;
+    /* margin:10px */
+    
+}
+.notice-input-search button{
+    height: 2.3rem;
+    width: 4rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: yellow;
+    border-style: none;
+    margin : 0;
+    margin-bottom: 2rem;
+}
+.notice-input-search button:hover{
+    background-color: rgba(255, 255, 0, 0.548);
+    
+}
+.notice-input-search select{
+    border-radius:5px ;
+    height: 2.3rem;
+    width: 5rem;
+    border: solid #44444463;
+    outline: none;
+    margin: 0;
+    margin-left: 9rem;
+    
+}
+.notice-input-search select:focus{
+    border: solid yellow;
+}
+.notice-input-search input{
+    border: solid #44444463;
+    outline: none;
+    border-radius:5px ;
+    height: 2.3rem;
+    margin: 0;
+}
+    
+.notice-input-search input:focus{
+    border:solid #ffef14;
+    
+}
+    

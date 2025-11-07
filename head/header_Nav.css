@@ -13,7 +13,7 @@
 }
 
 .header-inner {
-    max-width: 1280px;
+    max-width: 1270px;
     margin: 0 auto;
     /* margin-top: 20px; */
     display: flex;
@@ -28,11 +28,13 @@
 
 .header-inner:hover {
     height: 300px;
+    opacity: 1;
     /* hover 시 inner가 커짐 */
 }
 
 .header-logo img {
-    height: 50px;
+    height: 3.3rem;
+    margin-left: 2rem;
 }
 
 nav.header-nav {
@@ -144,4 +146,21 @@ nav.header-nav {
 .header-nav-move-bar-link-click:hover {
     background-color: #ffcc00;
     border-style: none;
+}
+
+@media (max-width: 1280px) {
+    .header-nav-list {
+    /* display: none; */
+}
+.header-inner:hover {
+    height: 100%;
+}
+.header-section:hover {
+    transition: 0.5s;
+}
+}
+@media (max-width: 760px) {
+    .header-nav-move-bar-link {
+    /* display: none; */
+}
 }
