@@ -1,4 +1,4 @@
-/* Test */
+
 .header-section {
     position: fixed;
     top: 0;
@@ -23,11 +23,11 @@
     height: 80px;
     overflow: hidden;
     transition: height 0.3s ease;
-    padding: 10px 0;
+    padding-top: 10px;
 }
 
 .header-inner:hover {
-    height: 300px;
+    height: 210px;
     opacity: 1;
     /* hover 시 inner가 커짐 */
 }
@@ -84,7 +84,8 @@ nav.header-nav {
 /* hover 시 서브 메뉴 표시 */
 .header-inner:hover .header-submenu {
     opacity: 1;
-    max-height: 200px;
+    min-height: 210px;
+    max-height: 210px;
 }
 
 .header-submenu-item a {
@@ -101,7 +102,7 @@ nav.header-nav {
 
 .header-nav-item:hover {
     background-color: #ffcc00;
-    height: 20rem;
+    height: 210px;
 }
 
 .header-submenu-item:hover {
