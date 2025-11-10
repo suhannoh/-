@@ -28,6 +28,7 @@
 
 .header-inner:hover {
     height: 210px;
+
     opacity: 1;
     /* hover 시 inner가 커짐 */
 }

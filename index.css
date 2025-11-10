@@ -29,28 +29,36 @@ ul {
 .wrap {
   position: relative;
   width: 100%;
-  /* 높이는 나중에 취합하고 조금 수정하도록 해요 ! */
-  height: 5000px; 
   text-align: center;
 }
 
-/* 자기 섹션은 마음대로 수정하세요  
-   임의로 제가 설정 해두었습니다
-*/
+html,body{
+  height: 100vh;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
 
-/* ㅡㅡㅡ 푸터섹션 ㅡㅡㅡ */
+main{
+  overflow: visible;
+}
 
-.footer-section {
+main section{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 20rem;
-  background: gray;
-  border: 1px solid black;
-  text-align: center;
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    background: #fff;
+    scroll-snap-align: start;
 }
 
+footer{
+  scroll-snap-align: end;
+}
+
+main section:nth-of-type(3){
+  background: var(--mega-yellow-color);
+}
 
 /* ㅡㅡㅡ사이드 퀵 ㅡㅡㅡ */
 .fixed-side-container {
